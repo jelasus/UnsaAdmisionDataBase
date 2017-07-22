@@ -1,3 +1,4 @@
+/*NUEVO ARCHIVO (JESUS)*/
 <?php
     $db = mysqli_connect('localhost','ii','chalenyer','ii_admision_unsa')
     or die('Error conectando al server MySQL');
