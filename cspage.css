@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+body{
+    background-color: white;
+}
+
+#background-page{
+    background-color: white;
+    margin: 0px 0px;
+    float: left;
+    height: 1200px;
+    width: 100%;
+    
+}
+
+#head-page{
+    position: fixed;
+    background-color: blue;
+    margin: -10px 0px;
+    float: left;
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+    box-shadow: darkred 0px 3px 0px;
+}
+
+#logo{
+    background-color: white;
+    margin: 0px 0px;
+    float: left;
+    height: 100px;
+    width: 100%;
+    box-shadow: darkred 0px 3px 0px;
+}
+#logounsa{
+    position: sticky;
+    background-color: white;
+    margin: 0px 0px;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+/*########################################################*/
+
+#menu-head{
+    background-color: dodgerblue;
+    margin: 0px 0px;
+    float: right;
+    height: 75px;
+    width: 100%;
+}
+
+/*########################################################*/
+#login{
+    background-color: gray;
+    margin: 0px 0px;
+    float: right;
+    height: 70px;
+    width: 70%;
+}
+
+#sesion{
+    background-color: lightgreen;
+    margin: 0px 0px;
+    float: left;
+    height: 70px;
+    width: 30%;
+}
+
+#li-sesion{
+    background-color: yellowgreen;
+    margin: 20px 20px;
+    float: left;
+    height: 30px;
+    width: 30%;
+    font-size: 20px;
+}
+
+#ul-sesion{
+    background-color: darkblue;
+    margin: 10px 10px;
+    float: left;
+    height: 30px;
+    width: 70%;
+        
+}
+
+#li-sesion2{
+    background-color: aliceblue;
+    margin: 0px 0px;
+    float: left;
+    height: 30px;
+    width: 30%;
+    font-size: 20px;
+}
+
+
+
+/*ul-sesion li-sesion{
+    background-color: black;
+    margin: 0px;
+    display: inline;
+    color: dimgray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 20px;
+        
+}*/
+
+#logouser{
+    position: sticky;
+    background-color: white;
+    margin: 0px 0px;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+/*#############################################*/
+#main-menu{
+    background-color: blueviolet;
+    margin: 0px 0px;
+    float: left;
+    height: 120px;/*ajustar*/
+    width: 100%;
+}
+
+#nav-mainmenu{
+    background-color: hotpink;
+    margin: 0% 0%;
+    float: left;
+    height: 115px;
+    width: 100%;
+}
+
+#ul-mainmenu{
+    background-color: red;
+    margin: 0px 0px;
+    float: left;
+    height: 100px;
+    width: 85%; /*ajustar*/    
+}
+
+#li-main{
+    background-color: cyan;
+    margin: 0px 0px;
+    display: inline;
+    color: dimgray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 30px;      
+}
+
+/*#########################################################################*/
+
+#sub-menu{
+    background-color: lightgreen;
+    margin: 0px 0px;
+    float: left;
+    height: 76%;/*ajustar*/
+    width: 100%;
+}
+
+#nav-submenu{
+    background-color: forestgreen;
+    margin: 0% 0%;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    background-color: yellow;
+    margin: 10px 10px;
+    float: left;
+    height: 97%;
+    width: 80%; /*ajustar*/    
+}
+
+li{
+    background-color: black;
+    margin: 10px 0px;
+    display:block;
+    color: dimgray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    height: 90px;
+    width: 100%; 
+        
+}
+/*
+ul li{
+    background-color: cyan;
+    margin: 5px;
+    display: inline;
+    color: dimgray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 20px;
+        
+}
+
+ul li ~ul{
+    display:none;
+}
+
+ul li ~ul li{
+    background-color: lightpink;
+    display: table-row;
+    color: darkblue;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+        
+}
+
+
+ul li:hover {
+    -webkit-transform:scale(1.5);
+    font-size: 1.5em;
+    color: darkblue;
+    background: lightgray;
+}
+
+a{
+    background-color: lightgray;
+    margin: 5px;
+    display: inline;
+    color: dimgray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+        
+}
+
+
+	
+ul li:hover ~ul{
+    background: none;
+	display: block;
+    position: absolute;
+}
+*/
+
+/*#############################################*/
+
+#search{
+    background-color: white;
+    margin: 0px 0px;
+    float: right;
+    height: 85px;
+    width: 10%;
+    box-shadow: darkred 0px 3px 0px;
+}
+#lienzo{
+    background-color: light;
+    margin: 5% 10%;
+    float: right;
+    height: 80%;
+    width: 80%;
+}
+
+
+
+#body-page{
+    background-color: lightcoral;
+    padding: 0px;
+    margin: 0px 0px;
+    float: right;
+    height: 100%;
+    width: 85%;
+}
+
+#page1{
+    background-color: sienna;
+    padding: 0px;
+    margin: 0px 0px;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#page2{
+    background-color: orange;
+    padding: 0px;
+    margin: 0px 0px;
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+#footer-page{
+    background-color: cadetblue;
+    margin: 0px 0px;
+    float: right;
+    height: 380px;
+    width: 100%;
+}
+
+
+/*#bcfooter{
+    background-color: aquamarine;
+    clear: both;
+    margin-top: 5px;
+}*/
+
