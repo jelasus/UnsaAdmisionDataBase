@@ -30,7 +30,7 @@ VALUES ('Glenn','Quagmire',33)");
 
 $servername = "localhost";
 $username = "username";
-$password = "password";
+$password = "password";333333333333333333
 
 
 // Create connection
@@ -44,7 +44,7 @@ echo "Connected successfully";
 
 //-----
 
-pruebita11
+pruebita11frttr6
 
 
 
