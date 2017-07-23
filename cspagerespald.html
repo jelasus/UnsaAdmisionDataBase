@@ -8,11 +8,10 @@
 	<meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
     
 	<title>CS-UNSA</title>
-	<script src="cspage.js"></script>
+	<script src="cspagerespald.js"></script>
 	<link rel="stylesheet" href="cspage.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="estilos.css">
-	
 </head>
 <body>
     <div id = "background-page">
@@ -66,7 +65,6 @@
                 
             </div>
             
-            
             <div id = "sub-menu" >
                 <nav id="nav-submenu">
                     <ul id="ul-navmenu">
@@ -87,13 +85,14 @@
                         </li>
                         -->
                         <label class="btn btn-primary active">
-                            <input type="radio" name="options" id="ver" autocomplete="off" checked> VER
+                            <input type="radio" name="options" id="ver" autocomplete="off" onclick="search()"> VER
                          </label>
                          <label class="btn btn-primary">
-                             <input type="radio" name="options" id="modificar" autocomplete="off"> MODIFICAR
+                             <input type="radio" name="options" id="modificar" autocomplete="off"
+                             onclick="search()"> MODIFICAR
                          </label>
                          <label class="btn btn-primary">
-                             <input type="radio" name="options" id="registrar" autocomplete="off"> REGISTRAR
+                             <input type="radio" name="options" id="registrar" autocomplete="off" onclick="search()"> REGISTRAR
                          </label>
                     </ul>
                 </nav>
