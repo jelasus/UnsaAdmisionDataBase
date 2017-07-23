@@ -163,7 +163,7 @@ body{
 }
 
 /*#li-main:active{
-    /*-webkit-transform:scale(1.5);
+   p /*-webkit-transform:scale(1.5);
     font-size: 2em;
     color: black;
     background-color: aqua;
@@ -184,6 +184,16 @@ body{
     height: 76%;/*ajustar*/
     width: 100%;
 
+}
+
+#page-personal{
+    display: none;
+}
+#page-pregunta{
+    display: none;
+}
+#page-proceso{
+    display: none;
 }
 #nav-submenu{
     background-color: forestgreen;

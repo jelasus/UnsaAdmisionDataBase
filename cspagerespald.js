@@ -33,29 +33,43 @@ function showNothing(){
 }
 
 function search(){
-    var persona = document.getElementById("persona");
+    var personal = document.getElementById("personal");
     var proceso = document.getElementById("proceso");
     var pregunta = document.getElementById("pregunta");
     if (pregunta.checked){
-        show("pregunta");    
+        show(pregunta);    
     }
     else if (proceso.checked){
-        show("proceso");
+        show(proceso);
+    }
+    else if (personal.checked){
+        show(personal);
     }
     else{
-        show("persona");
+        showNothing();
     }
 }
 
 function show(elem){
-    var process = document.getElementById("page1");
-    if (elem == "proceso"){
-        process.style.backgroundColor = "red"; 
+    var proceso = document.getElementById("page-proceso");
+    var pregunta = document.getElementById("page-pregunta");
+    var personal = document.getElementById("page-personal");
+    if (elem.id == "proceso"){
+        pregunta.style.display = "none"; 
+        personal.style.display = "none"; 
+        proceso.style.display = "initial";
     }
-    else if (elem == "pregunta"){
-        process.style.backgroundColor = "green"; 
+    else if (elem.id == "pregunta"){
+        proceso.style.display = "none"; 
+        personal.style.display = "none"; 
+        pregunta.style.display = "initial";
     }
-    else {
-        process.style.backgroundColor = "yellow"; 
+    else if (elem.id == "personal"){
+        pregunta.style.display = "none"; 
+        proceso.style.display = "none";
+        personal.style.display = "initial";
+    }
+    else{
+        showNothing();
     }
 }
