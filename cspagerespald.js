@@ -73,3 +73,35 @@ function show(elem){
         showNothing();
     }
 }
+
+function modificar(elem){
+    alert("modificando");
+}
+
+function ver(elem){
+    alert("leyendo");
+}
+
+function registrar(elem){
+    alert("registrando");
+}
+
+function hacer(elem){
+    var modificar_b = document.getElementById("modificar");
+    var ver_b = document.getElementById("ver");
+    var registrar_b = document.getElementById("registrar");
+    if (modificar_b.checked){
+        modificar(elem);
+    }
+    else if (ver_b.checked){
+        ver(elem);
+    }
+    else if (registrar_b.checked){
+        registrar(elem);
+    }
+    else{
+        showNothing();
+    }
+}
+
+
