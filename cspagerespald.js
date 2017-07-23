@@ -99,7 +99,8 @@ function Ver(elem){
 }
 //////////////////////////7
 function Registrar(elem){
-    alert("leyendo");
+    var space = document.getElementById("buscar-texto");
+    space.style.display="initial";
 }
 ///////////////////////////
 function hacer(elem){
@@ -119,5 +120,7 @@ function hacer(elem){
         showNothing();
     }
 }
-
-
+///////////////////////////////
+function getDir(){
+    document.getElementById("entradaDatos").action = "";/*colocar aqui*/
+}
