@@ -32,26 +32,12 @@
   <body>
     <div id="caja">
       <h1>login</h1>
-      <form method = "POST">
+      <form action= "login_do.php"method = "POST">
         <input id="usuario" name ="usuario" type="text" placeholder="Nombre de usuario"/>
         <input id="password" name="password" type="password" placeholder="Password"/>
         <input name="submit" type="submit" value="Entrar"/>
       </form>
     </div>
-    <?php
-    if (isset($_POST['submit']))
-    {     
-        include("login_config.php");
-        session_start();
-        $usuario=$_POST["usuario"];
-        $password=$_POST["password"];
-        $_SESSION['login_user']=$usuario; 
-        $query = mysql_query("SELECT Nombre FROM Usuario WHERE Nombre='$usuario' and Contraseña='$password'");
-        if (mysql_num_rows($query) == 1){
-            echo "<script language='javascript' type='text/javascript'> location.href='cspage.php' </script>";   
-        }else
-            echo "<script type='text/javascript'>alert('Usuario o clav inválida')</script>";    
-    }
-    ?>
+    
   </body>
 </html>
