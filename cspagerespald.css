@@ -195,6 +195,12 @@ body{
 #page-proceso{
     display: none;
 }
+#buscar-texto{
+    display: none;
+}
+#recibir-texto{
+    display: none;
+}
 #nav-submenu{
     background-color: forestgreen;
     margin: 0% 0%;

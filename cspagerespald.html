@@ -46,7 +46,7 @@
                     <ul id ="ul-mainmenu"  class="btn-group" data-toggle="buttons"> -->
                     <ul id ="ul-mainmenu" >
                          <label class="btn btn-primary active">
-			                <input type="radio" name="entidad" id="proceso" autocomplete="off" checked> PROCESO
+			                <input type="radio" name="entidad" id="proceso" autocomplete="off"> PROCESO
 			             </label>
 			             <label class="btn btn-primary">
 			                 <input type="radio" name="entidad" id="pregunta" autocomplete="off"> PREGUNTA
@@ -130,6 +130,13 @@
                     <button id="fecha-inicio" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha de Inicio</button>
                     <button id="fecha-final" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha del Final</button>
                 </div>
+                <div id = "buscar-texto">
+                    <form action="/action_page.php">
+                Buscar: <input type="text" name="buscado" value="none"><br>
+                        <input id = "valor-submit" type="submit" value="none">
+                    </form>
+                </div>
+                <div id = "recibir-texto"></div>
             </div> 
             
             <div id = "page2">

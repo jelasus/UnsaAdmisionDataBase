@@ -73,19 +73,19 @@ function show(elem){
         showNothing();
     }
 }
-
+///////////////////////
 function modificar(elem){
     alert("modificando");
 }
-
+//////////////////////7
 function ver(elem){
     alert("leyendo");
 }
-
+//////////////////////////7
 function registrar(elem){
-    alert("registrando");
+    alert("leyendo");
 }
-
+///////////////////////////
 function hacer(elem){
     var modificar_b = document.getElementById("modificar");
     var ver_b = document.getElementById("ver");
