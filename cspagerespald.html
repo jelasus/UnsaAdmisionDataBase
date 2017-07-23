@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta charset="iso-8559-1"/>
-	<meta name="description" content="pagina de prueba html5"/>
-	<meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
+    <meta charset="iso-8559-1"/>
+    <meta name="description" content="pagina de prueba html5"/>
+    <meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
     
-	<title>CS-UNSA</title>
-	<script src="cspagerespald.js"></script>
-	<link rel="stylesheet" href="cspagerespald.css"/>
+    <title>CS-UNSA</title>
+    <script src="cspagerespald.js"></script>
+    <link rel="stylesheet" href="cspagerespald.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div id = "background-page">
@@ -46,14 +45,14 @@
                     <ul id ="ul-mainmenu"  class="btn-group" data-toggle="buttons"> -->
                     <ul id ="ul-mainmenu" >
                          <label class="btn btn-primary active">
-			                <input type="radio" name="entidad" id="proceso" autocomplete="off"> PROCESO
-			             </label>
-			             <label class="btn btn-primary">
-			                 <input type="radio" name="entidad" id="pregunta" autocomplete="off"> PREGUNTA
-			             </label>
+                            <input type="radio" name="entidad" id="proceso" autocomplete="off"> PROCESO
+                         </label>
                          <label class="btn btn-primary">
-			                 <input type="radio" name="entidad" id="personal" autocomplete="off"> PERSONAL
-			             </label>
+                             <input type="radio" name="entidad" id="pregunta" autocomplete="off"> PREGUNTA
+                         </label>
+                         <label class="btn btn-primary">
+                             <input type="radio" name="entidad" id="personal" autocomplete="off"> PERSONAL
+                         </label>
                         <!--<div id = "main">
                             <br>
                             <br>
@@ -85,14 +84,14 @@
                         </li>
                         -->
                         <label class="btn btn-primary active">
-                            <input type="radio" name="options" id="ver" autocomplete="off" onclick="search()"> VER
+                            <input type="radio" name="options" id="ver" autocomplete="off" onclick="search(this.id)"> VER
                          </label>
                          <label class="btn btn-primary">
                              <input type="radio" name="options" id="modificar" autocomplete="off"
-                             onclick="search()"> MODIFICAR
+                             onclick="search(this.id)"> MODIFICAR
                          </label>
                          <label class="btn btn-primary">
-                             <input type="radio" name="options" id="registrar" autocomplete="off" onclick="search()"> REGISTRAR
+                             <input type="radio" name="options" id="registrar" autocomplete="off" onclick="search(this.id)"> REGISTRAR
                          </label>
                     </ul>
                 </nav>
@@ -117,18 +116,47 @@
                     <button id="regimen" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por regimen</button>
                     <button id="estado" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por estado</button>
                     <button id="cui" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por CUI</button>
+                    <button id="cargo-proceso" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cargo-Proceso</button>
+                    <button id="cargo-unsa" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cargo-Unsa</button>
+                    <button id="infoHistorica" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Informacion Historica</button>
+                    <div id = "page-personal-ver" class="btn-group-vertical">
+                        <button id="A" type="button" class="btn btn-primary" onclick="hacer(this.id)">A</button>
+                        <button id="B" type="button" class="btn btn-primary" onclick="hacer(this.id)">B</button>
+                        <button id="C" type="button" class="btn btn-primary" onclick="hacer(this.id)">C</button>
+                    </div>
                 </div>
                 <div id = "page-pregunta" class="btn-group-vertical">
+                    <button id="ID Pregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por ID de la pregunta</button>
                     <button id="preguntas-elegidas" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Preguntas Elegidas</button>
                     <button id="dificultad" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Dificultad</button>
                     <button id="enunciado" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Enunciado</button>
-                    <button id="distractores" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractores</button>
+                    <button id="distractor A" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor A</button>
+                    <button id="distractor B" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor B</button>
+                    <button id="distractor C" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor C</button>
+                    <button id="distractor D" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor D</button>
+                    <button id="distractor E" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor E</button>
                     <button id="fecha" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha</button>
+                    <button id="resolucion" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Resolucion</button>
+                    <button id="dniPregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por DNI</button>
+                    <button id="nombrePregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Nombre de la pregunta</button>
+                    <div id = "page-pregunta-modificar" class="btn-group-vertical">
+                        <button id="no-elegida" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Pregunta no Elegida</button>
+                    </div>
+                    <div id = "page-pregunta-ver" class="btn-group-vertical">
+                        <button id="area" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Area</button>
+                    </div>
                 </div>
                 <div id = "page-proceso" class="btn-group-vertical">
                     <button id="año" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Año</button>
                     <button id="fecha-inicio" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha de Inicio</button>
                     <button id="fecha-final" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha del Final</button>
+                    <div id ="page-proceso-ver" class="btn-group-vertical">
+                        <button id="procesoProceso" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Proceso</button>
+                    </div>
+                    <div id ="page-proceso-modificar" class="btn-group-vertical">
+                        <button id="cantidadSelecionados" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Seleccionados por Funcion</button>
+                        <button id="definirCantidad" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Areas en las Funciones</button>
+                    </div>
                 </div>
                 <div id = "buscar-texto">
                     <form action="/action_page.php">
@@ -147,65 +175,65 @@
             
             
             <!--<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Iniciar Sesion
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Crear Nuevo Proceso
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Ver Personal
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Ingresar Nuevo Participante
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Importar Participantes
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Exportar Participantes
-    		</a>
-    		<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-        	<br>
-    		<a href="#" class="button blue radius">
-    		<span class="icon-brand84"></span>Enviar Mensaje
-    		</a>-->
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Iniciar Sesion
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Crear Nuevo Proceso
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Ver Personal
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Ingresar Nuevo Participante
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Importar Participantes
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Exportar Participantes
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button blue radius">
+            <span class="icon-brand84"></span>Enviar Mensaje
+            </a>-->
             
             
             

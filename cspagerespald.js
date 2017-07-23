@@ -16,73 +16,89 @@ function start() {
 }
 
 window.addEventListener("load", start, false);
-
-function entity(elem){
-    var entidad = document.getElementById("elem");
-    if (entidad.checked){
-        search(elem);
-    }
-    else {
-        showNothing();
-    }
-}
-
+////////////////////////////////////////////////
 function showNothing(){
-    var estado = document.getElementById("page1");
-    estado.style.backgroundColor= "red";
 }
-
-function search(){
+///////////////////////////////////////////////77
+function search(elem){
     var personal = document.getElementById("personal");
     var proceso = document.getElementById("proceso");
     var pregunta = document.getElementById("pregunta");
     if (pregunta.checked){
-        show(pregunta);    
+        show(pregunta,elem);    
     }
     else if (proceso.checked){
-        show(proceso);
+        show(proceso,elem);
     }
     else if (personal.checked){
-        show(personal);
-    }
-    else{
-        showNothing();
-    }
+        show(personal,elem);
 }
-
-function show(elem){
+}
+function show(elem1,elem2){
     var proceso = document.getElementById("page-proceso");
     var pregunta = document.getElementById("page-pregunta");
     var personal = document.getElementById("page-personal");
-    if (elem.id == "proceso"){
-        pregunta.style.display = "none"; 
-        personal.style.display = "none"; 
+    if (elem1.id == "proceso"){
+        actualizarProceso(elem2);
+        pregunta.style.display = "none";
+        personal.style.display = "none";
         proceso.style.display = "initial";
     }
-    else if (elem.id == "pregunta"){
-        proceso.style.display = "none"; 
-        personal.style.display = "none"; 
+    else if (elem1.id == "pregunta"){
+        actualizarPregunta(elem2);
+        proceso.style.display = "none";
+        personal.style.display = "none";
         pregunta.style.display = "initial";
     }
-    else if (elem.id == "personal"){
-        pregunta.style.display = "none"; 
+    else if (elem1.id == "personal"){
+        actualizarPersonal(elem2);
+        pregunta.style.display = "none";
         proceso.style.display = "none";
         personal.style.display = "initial";
     }
-    else{
-        showNothing();
+
+}
+function actualizarPregunta(elem){
+    var funcion1 = document.getElementById("page-pregunta-modificar");
+    var funcion2 = document.getElementById("page-pregunta-ver");
+    funcion1.style.display="none";
+    funcion2.style.display="none";
+    if (elem == "modificar"){
+        funcion1.style.display = "initial";
+    }
+    else if (elem == "ver"){
+        funcion2.style.display = "initial";
     }
 }
-///////////////////////
-function modificar(elem){
+function actualizarProceso(elem){
+    var funcion1 = document.getElementById("page-proceso-modificar");
+    var funcion2 = document.getElementById("page-proceso-ver");
+    funcion1.style.display="none";
+    funcion2.style.display="none";
+    if (elem == "modificar"){
+        funcion1.style.display = "initial";
+    }
+    else if (elem == "ver"){
+        funcion2.style.display = "initial";
+    }
+}
+function actualizarPersonal(elem){
+    var funcion = document.getElementById("page-personal-ver");
+    funcion.style.display="none";
+    if (elem == "ver"){
+        funcion.style.display = "initial";
+    }
+}
+///////////////////////////////////////////7
+function Modificar(elem){
     alert("modificando");
 }
 //////////////////////7
-function ver(elem){
+function Ver(elem){
     alert("leyendo");
 }
 //////////////////////////7
-function registrar(elem){
+function Registrar(elem){
     alert("leyendo");
 }
 ///////////////////////////
@@ -91,13 +107,13 @@ function hacer(elem){
     var ver_b = document.getElementById("ver");
     var registrar_b = document.getElementById("registrar");
     if (modificar_b.checked){
-        modificar(elem);
+        Modificar(elem);
     }
     else if (ver_b.checked){
-        ver(elem);
+        Ver(elem);
     }
     else if (registrar_b.checked){
-        registrar(elem);
+        Registrar(elem);
     }
     else{
         showNothing();
