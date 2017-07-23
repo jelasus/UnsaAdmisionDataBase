@@ -1,0 +1,20 @@
+Proceso
+    ver
+        por procesos
+    modificar
+        cantidad de seleccionados por funcion
+        definir cantidad por area en las funciones
+ 
+ Personal
+    ver
+        por cargo_proceso
+        por cargo_unsa        
+        por información histórica
+        **** aparte historial grafico
+        **** importar, exportar lista de seleccionados
+        **** enviar mensaje a seleccionados
+ Pregunta   
+    ver
+        por área
+    registrar 
+        no elegidas
