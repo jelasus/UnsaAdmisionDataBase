@@ -43,11 +43,11 @@
     {     
         include("login_config.php");
         session_start();
-        $usuario=$_POST['usuario'];
-        $password=$_POST['password'];
+        $usuario=$_POST["usuario"];
+        $password=$_POST["password"];
         $_SESSION['login_user']=$usuario; 
-        $query = mysqli_query("SELECT Nombre FROM Usuario WHERE Nombre='$usuario' and Contraseña='$password'");
-        if (mysqli_num_rows($query) == 1){
+        $query = mysql_query("SELECT Nombre FROM Usuario WHERE Nombre='$usuario' and Contraseña='$password'");
+        if (mysql_num_rows($query) == 1){
             echo "<script language='javascript' type='text/javascript'> location.href='cspage.php' </script>";   
         }else
             echo "<script type='text/javascript'>alert('Usuario o clav inválida')</script>";    
