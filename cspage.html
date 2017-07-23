@@ -12,6 +12,16 @@
 	<link rel="stylesheet" href="cspage.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="estilos.css">
+
+    <meta charset="utf-8" />
+    <title>Bootstrap Editable Grid Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	
 </head>
 <body>
@@ -95,16 +105,155 @@
         </div>
         
         
-        <div id = "body-page">
-            <div id = "page1">
-                
-            
+        <div class="col-md-12" class="container-fluid" id = "body-page">
+            <div class="col-md-12" class="container-fluid" id = "page1">
+
+            <ul class="list-group">
+                <li>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR FORMULADORES</a>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR TECNICOS</a>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR  CONTROLADORES</a>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR CONTADORES</a>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR PORTEROS</a>
+                  <br>
+                  <a href="#" class="list-group-item active"><span class="badge">20</span>SELECCIONAR CONTROLADORES DE PUERTA</a>
+                  <br>
+                </li>
+            </ul>
             
             </div>
             
-            <div id = "page2">
+            <div class="col-md-12" id = "page2">
+
+            <div class="container-fluid">
+
+            <div class="page-header">
+                <h1>Tabla de Formuladores</h1>
+            </div>
             
-            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="text-center">Tabla de Formuladores UNSA proceso 2017<span class="fa fa-edit pull-right bigicon"></span></h4>
+                    </div>
+                    <div class="panel-body text-center">
+                <div class="table-responsive" id="grid"></div>
+                </div>
+            </div>
+    </div>
+
+<!-- you need to include the shieldui css and js assets in order for the grids to work -->
+    <link rel="stylesheet" type="text/css" href="http://prepbootstrap.com/Content/shieldui-lite/dist/css/light/all.min.css" />
+    <script type="text/javascript" src="http://prepbootstrap.com/Content/shieldui-lite/dist/js/shieldui-lite-all.min.js"></script>
+
+    <script type="text/javascript" src="http://prepbootstrap.com/Content/data/shortGridData.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $("#grid").shieldGrid({
+            dataSource: {
+                data: gridData,
+                schema: {
+                    fields: {
+                        id: { path: "id", type: Number },
+                        age: { path: "age", type: Number },
+                        name: { path: "name", type: String },
+                        company: { path: "company", type: String },
+                        month: { path: "month", type: Date },
+                        isActive: { path: "isActive", type: Boolean },
+                        email: { path: "email", type: String },
+                        transport: { path: "transport", type: String }
+                    }
+                }
+            },
+            sorting: {
+                multiple: true
+            },
+            rowHover: false,
+            columns: [
+                { field: "name", title: "Nombre", width: "120px" },
+                { field: "age", title: "Edad", width: "80px" },
+                { field: "company", title: "Cargo Proceso" },
+                { field: "month", title: "Fecha Nac", format: "{0:MM/dd/yyyy}", width: "120px" },
+                { field: "isActive", title: "Elegido" },
+                { field: "email", title: "Email", width: "250px" },
+                { field: "transport", title: "Cargo Unsa", width: "120px", editor: myCustomEditor },
+                {
+                    width: "104px",
+                    title: "Delete Column",
+                    buttons: [
+                        { cls: "deleteButton", commandName: "delete", caption: "<img src='http://prepbootstrap.com/Content/images/template/BootstrapEditableGrid/delete.png' /><span>Delete</span>" }
+                    ]
+                }
+            ],
+            editing: {
+                enabled: true,
+                event: "click",
+                type: "cell",
+                confirmation: {
+                    "delete": {
+                        enabled: true,
+                        template: function (item) {
+                            return "Delete row with ID = " + item.id
+                        }
+                    }
+                }
+            },
+            events:
+            {
+                getCustomEditorValue: function (e) {
+                    e.value = $("#dropdown").swidget().value();
+                    $("#dropdown").swidget().destroy();
+                }
+            }
+        });
+
+        function myCustomEditor(cell, item) {
+            $('<div id="dropdown"/>')
+                .appendTo(cell)
+                .shieldDropDown({
+                    dataSource: {
+                        data: ["motorbike", "car", "truck"]
+                    },
+                    value: !item["transport"] ? null : item["transport"].toString()
+                }).swidget().focus();
+        }
+    });
+</script>
+
+<style type="text/css">
+    .sui-button-cell
+    {
+        text-align: center;
+    }
+
+    .sui-checkbox
+    {
+        font-size: 17px !important;
+        padding-bottom: 4px !important;
+    }
+
+    .deleteButton img
+    {
+        margin-right: 3px;
+        vertical-align: bottom;
+    }
+
+    .bigicon
+    {
+        color: #5CB85C;
+        font-size: 20px;
+    }
+</style>
+
+<!-- Bootstrap Editable Grid - END -->
+
+</div>
             
             </div>
             
