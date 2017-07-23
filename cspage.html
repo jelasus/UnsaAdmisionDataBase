@@ -5,12 +5,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta charset="iso-8559-1"/>
 	<meta name="description" content="pagina de prueba html5"/>
-	<meta name="keywords" content="nutricion, alimentacion, diabetes, salud, arequipa"/>
+	<meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
     
 	<title>CS-UNSA</title>
 	<script src="cspage.js"></script>
 	<link rel="stylesheet" href="cspage.css"/>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
 	
 </head>
 <body>
@@ -42,22 +43,45 @@
             
             <div id = "main-menu">
                 <nav id="nav-mainmenu">
-                    <ul id ="ul-mainmenu">
-                        <li id ="li-main">Proc</li>
-                        <li id ="li-main">Pers</li>
-                        <li id ="li-main">Preg</li>
+                    <ul id ="ul-mainmenu" class="btn-group" data-toggle="buttons">
+                         <label class="btn btn-primary active">
+			                <input type="radio" name="options" id="option1" autocomplete="off" checked> PROCESO
+			             </label>
+			             <label class="btn btn-primary">
+			                 <input type="radio" name="options" id="option2" autocomplete="off"> PREGUNTA
+			             </label>
+                         <label class="btn btn-primary">
+			                 <input type="radio" name="options" id="option3" autocomplete="off"> PERSONAL
+			             </label>
+                        <!--<div id = "main">
+                            <br>
+                            <br>
+                            <li id ="li-main" class = "btn active">Pregunta</li>
+                        </div>-->
+                        
                     </ul>
                 </nav>
                 
             </div>
             
             
-            <div id = "sub-menu">
+            <div id = "sub-menu" >
                 <nav id="nav-submenu">
                     <ul>
-                        <li>Ver</li>
-                        <li>Modificar</li>
-                        <li>Registrar</li>
+                        <br>
+                        <li class="btn btn-success btn-lg btn-block">                 <br>
+                            <large class = "lead">Ver</large>
+                        </li>
+                        <br>
+                        <li class="btn btn-success btn-lg btn-block">
+                            <br>
+                            <large class = "lead">Modificar</large>
+                        </li>
+                        <br>
+                        <li class="btn btn-success btn-lg btn-block">
+                            <br>
+                            <large class = "lead">Registrar</large>
+                        </li>
                     </ul>
                 </nav>
                 

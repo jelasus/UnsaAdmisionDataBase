@@ -104,8 +104,7 @@ body{
     color: dimgray;
     font-family: sans-serif;
     font-style: normal;
-    font-size: 20px;
-        
+    font-size: 20px;     
 }*/
 
 #logouser{
@@ -128,29 +127,53 @@ body{
 
 #nav-mainmenu{
     background-color: hotpink;
-    margin: 0% 0%;
+    margin: 0px 0px;
     float: left;
-    height: 115px;
+    height: 100%;
     width: 100%;
 }
 
 #ul-mainmenu{
     background-color: red;
-    margin: 0px 0px;
+    margin: 0px -35px;
     float: left;
-    height: 100px;
-    width: 85%; /*ajustar*/    
+    height: 100%;
+    width: 113% /*ajustar*/    
+}
+
+#main{
+    background-color: dimgray;
+    margin: 10px 0px;
+    /*display: inline;*/
+    float: left;
+    height: 80%;/*ajustar*/
+    width: 33%;      
 }
 
 #li-main{
-    background-color: cyan;
+    background-color: white;
+    
     margin: 0px 0px;
+    /*float: left;*/
     display: inline;
-    color: dimgray;
+    color: black;
     font-family: sans-serif;
     font-style: normal;
-    font-size: 30px;      
+    font-size: 20px;
 }
+
+/*#li-main:active{
+    /*-webkit-transform:scale(1.5);
+    font-size: 2em;
+    color: black;
+    background-color: aqua;
+}*/
+
+
+
+
+
+
 
 /*#########################################################################*/
 
@@ -160,8 +183,8 @@ body{
     float: left;
     height: 76%;/*ajustar*/
     width: 100%;
-}
 
+}
 #nav-submenu{
     background-color: forestgreen;
     margin: 0% 0%;
@@ -172,24 +195,36 @@ body{
 
 ul{
     background-color: yellow;
-    margin: 10px 10px;
+    margin: 10px 0px;
     float: left;
-    height: 97%;
-    width: 80%; /*ajustar*/    
+    height: 100%;
+    width: 100%; /*ajustar*/    
 }
 
 li{
-    background-color: black;
-    margin: 10px 0px;
-    display:block;
-    color: dimgray;
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 30px;
+/*    background-color: black;*/
+    margin: 20px -20px;
+/*    display:block;*/
+/*    color: dimgray;*/
+/*    font-family: sans-serif;*/
+/*    font-style: normal;*/
+/*    font-size: 10px;*/
     height: 90px;
     width: 100%; 
         
 }
+h1{
+/*    background-color: black;*/
+    margin: 20px 0px;
+/*    display:block;*/
+/*    color: dimgray;*/
+/*    font-family: sans-serif;*/
+/*    font-style: normal;*/
+/*    font-size: 10px;*/
+    height: 90px;
+    width: 100%;        
+}
+
 /*
 ul li{
     background-color: cyan;
