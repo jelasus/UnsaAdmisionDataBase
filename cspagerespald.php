@@ -186,6 +186,187 @@
                         <input id = "valor-submit" type="submit" value="Buscar">
                     </form>
                 </div>
+                <div id ="FormularioPersona">
+                    <form id = "FPersona">
+                      <div class="form-group">
+                        <label for="DNI">DNI</label>
+                        <input type="DNI" class="form-control" id="DNI" aria-describedby="DNIhelp" placeholder="Ingresar DNI">
+                      </div>
+                      <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="Nombre" class="form-control" id="Nombre" aria-describedby="Nombrehelp" placeholder="Ingresar Nombre">
+                      </div>
+                      <div class="form-group">
+                        <label for="Apellido">Apellido</label>
+                        <input type="Apellido" class="form-control" id="Apellido" aria-describedby="Apellidohelp" placeholder="Ingresar Apellido">
+                      </div>
+                      <div class="form-group">
+                        <label for="Cargo_Unsa">Cargo_Unsa</label>
+                        <select class="form-control" id="Cargo_Unsa1">
+                          <option>Administrativo</option>
+                          <option>Docente</option>
+                          <option>Estudiante</option>
+                        </select>
+                      </div>
+
+                      <fieldset class="form-group">
+                        <legend>Estado</legend>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsParticipa" id="optionsParticipa1" value="opcion1" checked>
+                            Si participa en el proceso actual.
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsParticipa" id="optionsParticipa2" value="option2">
+                            No participa en el proceso actual.
+                          </label>
+                        </div>
+
+                      <div class="form-group">
+                        <label for="Facultad">Facultad</label>
+                        <input type="Facultad" class="form-control" id="Facultad" aria-describedby="Facultadhelp" placeholder="Ingresar Facultad">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="E_mail">E_mail</label>
+                        <input type="E_mail" class="form-control" id="E_mail" aria-describedby="E_mailhelp" placeholder="Ingresar E_mail">
+                      </div>    
+
+                      <div class="form-group">
+                        <label for="CUI">CUI</label>
+                        <input type="CUI" class="form-control" id="CUI" aria-describedby="CUIhelp" placeholder="Ingresar CUI">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Cargo_Proceso">Cargo_Proceso</label>
+                        <select multiple class="form-control" id="Cargo_Proceso">
+                          <option>FORMULADOR</option>
+                          <option>TECNICO</option>
+                          <option>CONTROLADOR</option>
+                          <option>CONTADOR</option>
+                          <option>CONSERJE</option>
+                          <option>PORTERO</option>
+                          <option>CONTROLADOR DE PUERTA</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="Descripcion">Descripcion del participante</label>
+                        <textarea class="form-control" id="Descripcion" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile">Subir Archivo</label>
+                        <input type="file" class="form-control-file" id="Subir_Archivo" aria-describedby="Subir_ArchivoHelp">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div id = "FormularioPregunta">
+                    <form id = "FPregunta">
+                      <div class="form-group">
+                        <label for="ID_pregunta">ID_pregunta</label>
+                        <input type="ID_pregunta" class="form-control" id="ID_pregunta" aria-describedby="DNIhelp" placeholder="Ingresar ID_pregunta">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="ID_proceso">ID_proceso</label>
+                        <input type="ID_proceso" class="form-control" id="ID_proceso" aria-describedby="ID_procesohelp" placeholder="Ingresar ID_proceso">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="ID_cursoArea">ID_cursoArea</label>
+                        <input type="ID_cursoArea" class="form-control" id="ID_cursoArea" aria-describedby="ID_cursoAreahelp" placeholder="Ingresar ID_cursoArea">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="DNI">DNI</label>
+                        <input type="DNI" class="form-control" id="DNI" aria-describedby="DNIhelp" placeholder="Ingresar DNI">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Fecha">Fecha</label>
+                        <input type="Fecha" class="form-control" id="Fecha" aria-describedby="Fechahelp" placeholder="Ingresar Fecha">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="Nombre" class="form-control" id="Nombre" aria-describedby="Nombrehelp" placeholder="Ingresar Nombre">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Apellido">Apellido</label>
+                        <input type="Apellido" class="form-control" id="Apellido" aria-describedby="Apellidohelp" placeholder="Ingresar Apellido">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputFile">Subir Pregunta</label>
+                        <input type="file" class="form-control-file" id="Subir_Archivo1" aria-describedby="Subir_ArchivoHelp">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Dificultad">Dificultad</label>
+                        <select class="form-control" id="Dificultad">
+                          <option>Baja</option>
+                          <option>Mediana</option>
+                          <option>Alta</option>
+                        </select>
+                      </div>   
+
+                      <div class="form-group">
+                        <label for="Enunciado">Enunciado</label>
+                        <textarea class="form-control" id="Enunciado" rows="3"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Distractores">Distractores</label>
+                        <textarea class="form-control" id="Distractores" rows="5"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputFile">Subir Resolucion</label>
+                        <input type="file" class="form-control-file" id="Subir_Archivo2" aria-describedby="Subir_ArchivoHelp">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div id = "FormularioProceso">
+                    <form id = "FProceso">
+                      <div class="form-group">
+                        <label for="ID_proceso">ID_proceso</label>
+                        <input type="ID_proceso" class="form-control" id="ID_proceso" aria-describedby="ID_procesohelp" placeholder="Ingresar ID_proceso">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Anio">Anio</label>
+                        <input type="Anio" class="form-control" id="Anio" aria-describedby="Aniohelp" placeholder="Ingresar Anio">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Fecha_Inicial">Fecha_Inicial</label>
+                        <input type="Fecha_Inicial" class="form-control" id="Fecha_Inicial" aria-describedby="Fecha_Inicialhelp" placeholder="Ingresar Fecha_Inicial">
+                      </div>
+
+                       <div class="form-group">
+                        <label for="Fecha_Final">Fecha_Final</label>
+                        <input type="Fecha_Final" class="form-control" id="Fecha_Final" aria-describedby="Fecha_Finalhelp" placeholder="Ingresar Fecha_Final">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Tipo_Proceso">Tipo_Proceso</label>
+                        <select class="form-control" id="Tipo_Proceso">
+                          <option>Ordinario 1</option>
+                          <option>Ordinario 2</option>
+                          <option>ExtraOrdinario</option>
+                          <option>CeprUnsa 1</option>
+                          <option>CepreUnsa 1</option>
+                        </select>
+                      </div>   
+
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div> 
             
             <div id = "page2">
