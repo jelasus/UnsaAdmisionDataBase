@@ -21,6 +21,8 @@ function showNothing(){
 }
 ///////////////////////////////////////////////77
 function search(elem){
+    desactivarBuscar();
+    desactivarTexto();
     var personal = document.getElementById("personal");
     var proceso = document.getElementById("proceso");
     var pregunta = document.getElementById("pregunta");
@@ -168,6 +170,7 @@ function Registrar(elem){
 }
 ///////////////////////////
 function hacer(elem){
+
     var modificar_b = document.getElementById("modificar");
     var ver_b = document.getElementById("ver");
     var registrar_b = document.getElementById("registrar");
@@ -190,10 +193,14 @@ function hacer(elem){
 }*/
 ////////////////PERSONAL-FUNCIONES////////////////////
 function FormPersonalRegistrar(){
+    desactivarBuscar();
+    desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
 function FormPersonalDni(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -204,6 +211,8 @@ function FormPersonalDni(){
     }
 }
 function FormPersonalApellido(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -214,6 +223,8 @@ function FormPersonalApellido(){
     }
 }
 function FormPersonalNombre(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -224,6 +235,8 @@ function FormPersonalNombre(){
     }
 }
 function FormPersonalDependencia(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -234,6 +247,8 @@ function FormPersonalDependencia(){
     }
 }
 function FormPersonalCorreo(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -244,6 +259,8 @@ function FormPersonalCorreo(){
     }
 }
 function FormPersonalCategoria(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -254,6 +271,8 @@ function FormPersonalCategoria(){
     }
 }
 function FormPersonalRegimen(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -264,6 +283,8 @@ function FormPersonalRegimen(){
     }
 }
 function FormPersonalEstado(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -274,6 +295,8 @@ function FormPersonalEstado(){
     }
 }
 function FormPersonalCui(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -284,6 +307,8 @@ function FormPersonalCui(){
     }
 }
 function FormPersonalCargoProceso(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -294,6 +319,8 @@ function FormPersonalCargoProceso(){
     }
 }
 function FormPersonalCargoUnsa(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -304,6 +331,8 @@ function FormPersonalCargoUnsa(){
     }
 }
 function FormPersonalInfoHistorica(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -314,22 +343,32 @@ function FormPersonalInfoHistorica(){
     }
 }
 function FormPersonalA(){
+    desactivarBuscar();
+    desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormPersonalB(){
+    desactivarBuscar();
+    desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormPersonalC(){
+    desactivarBuscar();
+    desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 /////////////PREGUNTA-FUNCIONES//////////////
-function FormPreguntaRegistrar(elem){
+function FormPreguntaRegistrar(){
+    desactivarBuscar();
+    desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
 function FormPreguntaId(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -340,6 +379,8 @@ function FormPreguntaId(){
     }
 }
 function FormPreguntaPreguntasElegidas(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -350,6 +391,8 @@ function FormPreguntaPreguntasElegidas(){
     }
 }
 function FormPreguntaDificultad(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -360,6 +403,8 @@ function FormPreguntaDificultad(){
     }
 }
 function FormPreguntaEnunciado(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -370,6 +415,8 @@ function FormPreguntaEnunciado(){
     }
 }
 function FormPreguntaDistractorA(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -380,6 +427,8 @@ function FormPreguntaDistractorA(){
     }
 }
 function FormPreguntaDistractorB(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -390,6 +439,8 @@ function FormPreguntaDistractorB(){
     }
 }
 function FormPreguntaDistractorC(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -400,6 +451,8 @@ function FormPreguntaDistractorC(){
     }
 }
 function FormPreguntaDistractorD(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -410,6 +463,8 @@ function FormPreguntaDistractorD(){
     }
 }
 function FormPreguntaDistractorE(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -420,6 +475,8 @@ function FormPreguntaDistractorE(){
     }
 }
 function FormPreguntaFecha(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -430,6 +487,8 @@ function FormPreguntaFecha(){
     }
 }
 function FormPreguntaResolucion(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -440,6 +499,8 @@ function FormPreguntaResolucion(){
     }
 }
 function FormPreguntaDni(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -450,6 +511,8 @@ function FormPreguntaDni(){
     }
 }
 function FormPreguntaNombre(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -460,15 +523,23 @@ function FormPreguntaNombre(){
     }
 }
 function FormPreguntaNoElegida(){
+    desactivarBuscar();
+    desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
 function FormPreguntaArea(){
+    desactivarBuscar();
+    desactivarTexto();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormProcesoRegistrar(){
+    desactivarBuscar();
+    desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
 function FormProcesoFechaInicio(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -479,6 +550,8 @@ function FormProcesoFechaInicio(){
     }
 }
 function FormProcesoFechaFinal(){
+    desactivarBuscar();
+    desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -489,14 +562,20 @@ function FormProcesoFechaFinal(){
     }
 }
 function FormProcesoProceso(){
+    desactivarBuscar();
+    desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormProcesoCantidadSeleccionados(){
+    desactivarBuscar();
+    desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
 function FormProcesoDefinirCantidad(){
+    desactivarBuscar();
+    desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
