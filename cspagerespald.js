@@ -37,6 +37,7 @@ function search(elem){
     }
 }
 function show(elem1,elem2){
+    desactivarTodo();
     var pagePersonalMV = document.getElementById("page-personal-modificar-ver");
     var pageProcesoMV = document.getElementById("page-proceso-modificar-ver");
     var pagePreguntaMV = document.getElementById("page-pregunta-modificar-ver");
@@ -71,7 +72,7 @@ function show(elem1,elem2){
             pagePregunta.style.display="initial";
             pagePreguntaRegistrar.style.display="initial";
         }
-        else {
+        else if (elem1.id == "proceso"){
             pageProceso.style.display="initial";
             pageProcesoRegistrar.style.display="initial";
         }
@@ -94,14 +95,14 @@ function show(elem1,elem2){
                 PersonalVer.style.display = "initial";
             }
         }
-        else{
+        else if (elem1.id == "pregunta"){
             pagePregunta.style.display="initial";
             pagePreguntaMV.style.display="initial";
             if (elem2 == "modificar"){
-                PrenguntaModificar.style.display = "initial";
+                PreguntaModificar.style.display = "initial";
             }
             else if (elem2 == "ver"){
-                PrreguntaVer.style.display = "initial";
+                PreguntaVer.style.display = "initial";
             }
         }
     }
