@@ -1,0 +1,74 @@
+<form>
+  <div class="form-group">
+    <label for="DNI">DNI</label>
+    <input type="DNI" class="form-control" id="DNI" aria-describedby="DNIhelp" placeholder="Ingresar DNI">
+  </div>
+  <div class="form-group">
+    <label for="Nombre">Nombre</label>
+    <input type="Nombre" class="form-control" id="Nombre" aria-describedby="Nombrehelp" placeholder="Ingresar Nombre">
+  </div>
+  <div class="form-group">
+    <label for="Apellido">Apellido</label>
+    <input type="Apellido" class="form-control" id="Apellido" aria-describedby="Apellidohelp" placeholder="Ingresar Apellido">
+  </div>
+  <div class="form-group">
+    <label for="Cargo_Unsa">Cargo_Unsa</label>
+    <select class="form-control" id="Cargo_Unsa1">
+      <option>Administrativo</option>
+      <option>Docente</option>
+      <option>Estudiante</option>
+    </select>
+  </div>
+
+  <fieldset class="form-group">
+    <legend>Estado</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsParticipa" id="optionsParticipa1" value="opcion1" checked>
+        Si participa en el proceso actual.
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsParticipa" id="optionsParticipa2" value="option2">
+        No participa en el proceso actual.
+      </label>
+    </div>
+
+  <div class="form-group">
+    <label for="Facultad">Facultad</label>
+    <input type="Facultad" class="form-control" id="Facultad" aria-describedby="Facultadhelp" placeholder="Ingresar Facultad">
+  </div>
+
+  <div class="form-group">
+    <label for="E_mail">E_mail</label>
+    <input type="E_mail" class="form-control" id="E_mail" aria-describedby="E_mailhelp" placeholder="Ingresar E_mail">
+  </div>    
+
+  <div class="form-group">
+    <label for="CUI">CUI</label>
+    <input type="CUI" class="form-control" id="CUI" aria-describedby="CUIhelp" placeholder="Ingresar CUI">
+  </div>
+
+  <div class="form-group">
+    <label for="Cargo_Proceso">Cargo_Proceso</label>
+    <select multiple class="form-control" id="Cargo_Proceso">
+      <option>FORMULADOR</option>
+      <option>TECNICO</option>
+      <option>CONTROLADOR</option>
+      <option>CONTADOR</option>
+      <option>CONSERJE</option>
+      <option>PORTERO</option>
+      <option>CONTROLADOR DE PUERTA</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="Descripcion">Descripcion del participante</label>
+    <textarea class="form-control" id="Descripcion" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">Subir Archivo</label>
+    <input type="file" class="form-control-file" id="Subir_Archivo" aria-describedby="Subir_ArchivoHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
