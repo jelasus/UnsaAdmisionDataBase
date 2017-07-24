@@ -5,7 +5,7 @@
     <meta charset="iso-8559-1"/>
     <meta name="description" content="pagina de prueba html5"/>
     <meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
-    
+
     <title>CS-UNSA</title>
     <script src="cspagerespald.js"></script>
     <link rel="stylesheet" href="cspagerespald.css"/>
@@ -16,40 +16,31 @@
     <div id = "background-page">
         <div id = "head-page">
             <div id = "logo">
-                <figure id = "logounsa"> 
+                <figure id = "logounsa">
                     <img src="unsa_logo.jpg" alt="logo unsa" height="95%" width="95%">
                 </figure>
             </div>
-            
-            
+
+
             <div id = "menu-head">
                 <div id = "login" class="user-heading">
                     <h3 id = "li-sesion">
                        Usuario
                        <span class="help-block">
                            <small>Adm/Op</small>
-                       </span>                       
+                       </span>
                     </h3>
-                    <div class="dropdown">
-                        <button id = "mas" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul id ="ul-sesion" class="dropdown-menu">
-                            <li id = "li-sesion2"><a href="#">Perfil</a></li>		
-                            <li id = "li-sesion2"><a href="#">Configuracion</a></li>
-                            <li id = "li-sesion2"><a href="#">Salir</a></li>
-                        </ul>
-                    </div>
+
                 </div>
-                
+
                 <div id = "sesion">
-                    <figure id = "logouser" class="user-image"> 
+                    <figure id = "logouser" class="user-image">
                             <img src="user.png" alt="user" title="user" class="img-circle" height="95%" width="95%">
-                    </figure> 
+                    </figure>
                 </div>
             </div>
-            
-            
+
+
             <div id = "main-menu">
                 <nav id="nav-mainmenu">
                     <!--
@@ -69,12 +60,12 @@
                             <br>
                             <li id ="li-main" class = "btn active">Pregunta</li>
                         </div>-->
-                        
+
                     </ul>
                 </nav>
-                
+
             </div>
-            
+
             <div id = "sub-menu" >
                 <nav id="nav-submenu">
                     <ul id="ul-navmenu">
@@ -94,25 +85,42 @@
                             <large class = "lead">Registrar</large>
                         </li>
                         -->
-                        <label class="btn btn-primary active">
+                        <label class="btn btn-success active">
                             <input type="radio" name="options" id="ver" autocomplete="off" onclick="search(this.id)"> VER
                          </label>
-                         <label class="btn btn-primary">
+                         <label class="btn btn-success">
                              <input type="radio" name="options" id="modificar" autocomplete="off"
                              onclick="search(this.id)"> MODIFICAR
                          </label>
-                         <label class="btn btn-primary">
+                         <label class="btn btn-success">
                              <input type="radio" name="options" id="registrar" autocomplete="off" onclick="search(this.id)"> REGISTRAR
                          </label>
+
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <a href="#" class="btn btn-default btn-sm active" role="button">Importar</a>
+                         <br>
+                         <a href="#" class="btn btn-default btn-sm active" role="button">Exportar</a>
+                         <br>
+                         <a href="#" class="btn btn-default btn-sm active" role="button">Enviar_mensaje</a>
+
+                         <br>
+                         <a href="login.php" class="btn btn-danger btn-sm" role="button">Cerrar Sesion</a>
+
                     </ul>
                 </nav>
-                
+
             </div>
-            
+
+
+
             <div id = "search">
                 <canvas width="150" height="120" id="lienzo">
                 su navegador no soporta canvas html5
-                </canvas> 
+                </canvas>
             </div>
         </div>
         <div id = "body-page">
@@ -243,7 +251,7 @@
                       <div class="form-group">
                         <label for="E_mail">E_mail</label>
                         <input type="E_mail" class="form-control" id="E_mail" aria-describedby="E_mailhelp" placeholder="Ingresar E_mail">
-                      </div>    
+                      </div>
 
                       <div class="form-group">
                         <label for="CUI">CUI</label>
@@ -322,7 +330,7 @@
                           <option>Mediana</option>
                           <option>Alta</option>
                         </select>
-                      </div>   
+                      </div>
 
                       <div class="form-group">
                         <label for="Enunciado">Enunciado</label>
@@ -372,20 +380,20 @@
                           <option>CeprUnsa 1</option>
                           <option>CepreUnsa 1</option>
                         </select>
-                      </div>   
+                      </div>
 
                       <input id = "FProcesoSubmit" type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-            </div> 
-            
-            <div id = "page2">
-            
-            
-            
             </div>
-            
-            
+
+            <div id = "page2">
+
+
+
+            </div>
+
+
             <!--<br>
             <br>
             <br>
@@ -446,22 +454,23 @@
             <a href="#" class="button blue radius">
             <span class="icon-brand84"></span>Enviar Mensaje
             </a>-->
-            
-            
-            
-            
+
+
+
+
         </div>
     </div>
-    
-  
+
+
 </body>
 <footer>
     <div id = "footer-page">
         <p>Copyright 2017, CS-UNSA</p>
         <p>Copyright 2017, CS-UNSA</p>
-        <p>Copyright 2017, CS-UNSA</p>   
+        <p>Copyright 2017, CS-UNSA</p>
     </div>
-    
+
 </footer>
 
 </html>
+
