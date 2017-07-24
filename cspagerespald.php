@@ -111,7 +111,7 @@
                         <button id="RegistrarPersonal" type="button" class="btn btn-primary" onclick="FormPersonalRegistrar(this.id)">Registrar una nueva persona</button>
                     </div>
                     <div id = "page-personal-modificar-ver" class="btn-group-vertical">
-                        <button id="dni" type="button" class="btn btn-primary" onclick="FormPersonalDni(this-id)">Por DNI</button>
+                        <button id="DNI" type="button" class="btn btn-primary" onclick="FormPersonalDni(this-id)">Por DNI</button>
                         <button id="apellido" type="button" class="btn btn-primary" onclick="FormPersonalApellido(this.id)">Por Apellido</button>
                         <button id="nombre" type="button" class="btn btn-primary" onclick="FormPersonalNombre(this.id)">Por Nombre</button>
                         <button id="dependencia" type="button" class="btn btn-primary" onclick="FormPersonalDependencia(this.id)">Por dependencia</button>
@@ -175,7 +175,7 @@
                 </div>
                 <div id = "recibir-texto">
                     <form id ="entradaDatos" method="POST">
-                CLAVE(DNI): <input id="a" type="text" name="a" value=""><br>
+                CLAVE(ID): <input id="a" type="text" name="a" value=""><br>
                 Buscar: <input id="b" type="text" name="b" value=""><br>
                         <input id = "texto-submit" type="submit" value="Escribir">
                     </form>

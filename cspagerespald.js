@@ -32,6 +32,7 @@ function search(elem){
         show(proceso,elem);
     }
     else if (personal.checked){
+        document.getElementById("")
         show(personal,elem);
     }
 }
@@ -116,8 +117,8 @@ function FormPersonalRegistrar(elem){
 function FormPersonalDni(elem){
     if (document.getElementById("modificar").checked){
         activarTexto();
-        document.getElementById("entradaDatos").action = "index.php";
-        document.getElementById("texto-submit").value = elem;
+        document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
