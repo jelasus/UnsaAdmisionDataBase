@@ -21,9 +21,9 @@ function showNothing(){
 }
 ///////////////////////////////////////////////77
 function search(elem){
-    var registrar = document.getElementById("personal");
-    var ver = document.getElementById("proceso");
-    var modificar = document.getElementById("pregunta");
+    var personal = document.getElementById("personal");
+    var proceso = document.getElementById("proceso");
+    var pregunta = document.getElementById("pregunta");
     if (pregunta.checked){
         show(pregunta,elem);
     }
@@ -75,7 +75,7 @@ function show(elem1,elem2){
         }
     }
     else {
-        if (elem1 == "proceso"){
+        if (elem1.id == "proceso"){
             pageProceso.style.display="initial";
             pageProcesoMV.style.display="initial";
             if (elem2 == "modificar"){
@@ -85,7 +85,7 @@ function show(elem1,elem2){
                 ProcesoVer.style.display = "initial";
             }
         }
-        else if (elem1 == "personal"){
+        else if (elem1.id == "personal"){
             pagePersonal.style.display="initial";
             pagePersonalMV.style.display="initial";
             if (elem2 == "ver"){
@@ -93,13 +93,13 @@ function show(elem1,elem2){
             }
         }
         else{
-            pageProceso.style.display="initial";
-            pageProcesoMV.style.display="initial";
+            pagePregunta.style.display="initial";
+            pagePreguntaMV.style.display="initial";
             if (elem2 == "modificar"){
-                ProcesoModificar.style.display = "initial";
+                PrenguntaModificar.style.display = "initial";
             }
             else if (elem2 == "ver"){
-                ProcesoVer.style.display = "initial";
+                PrreguntaVer.style.display = "initial";
             }
         }
     }
@@ -188,257 +188,329 @@ function hacer(elem){
 /*function getDir(){
     document.getElementById("entradaDatos").action = colocar aqui
 }*/
-function formulario(){
-
-}
 ////////////////PERSONAL-FUNCIONES////////////////////
-function FormPersonalRegistrar(elem){
+function FormPersonalRegistrar(){
+    activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
-function FormPersonalDni(elem){
-    if (elem == "modificar"){
+function FormPersonalDni(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalApellido(elem){
-    if (elem == "modificar"){
+function FormPersonalApellido(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalNombre(elem){
-    if (elem == "modificar"){
+function FormPersonalNombre(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalDependencia(elem){
-    if (elem == "modificar"){
+function FormPersonalDependencia(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalCorreo(elem){
-    if (elem == "modificar"){
+function FormPersonalCorreo(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalCategoria(elem){
-    if (elem == "modificar"){
+function FormPersonalCategoria(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalRegimen(elem){
-    if (elem == "modificar"){
+function FormPersonalRegimen(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalEstado(elem){
-    if (elem == "modificar"){
+function FormPersonalEstado(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalCui(elem){
-    if (elem == "modificar"){
+function FormPersonalCui(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalCargoProceso(elem){
-    if (elem == "modificar"){
+function FormPersonalCargoProceso(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalCargoUnsa(elem){
-    if (elem == "modificar"){
+function FormPersonalCargoUnsa(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalInfoHistorica(elem){
-    if (elem == "modificar"){
+function FormPersonalInfoHistorica(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPersonalA(elem){
+function FormPersonalA(){
+    activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
-function FormPersonalB(elem){
+function FormPersonalB(){
+    activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
-function FormPersonalC(elem){
+function FormPersonalC(){
+    activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
 /////////////PREGUNTA-FUNCIONES//////////////
 function FormPreguntaRegistrar(elem){
     document.getElementById("entradaDatos").action = "index.php";
 }
-function FormPreguntaId(elem){
-    if (elem == "modificar"){
+function FormPreguntaId(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaPreguntasElegidas(elem){
-    if (elem == "modificar"){
+function FormPreguntaPreguntasElegidas(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDificultad(elem){
-    if (elem == "modificar"){
+function FormPreguntaDificultad(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaEnunciado(elem){
-    if (elem == "modificar"){
+function FormPreguntaEnunciado(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDistractorA(elem){
-    if (elem == "modificar"){
+function FormPreguntaDistractorA(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDistractorB(elem){
-    if (elem == "modificar"){
+function FormPreguntaDistractorB(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDistractorC(elem){
-    if (elem == "modificar"){
+function FormPreguntaDistractorC(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDistractorD(elem){
-    if (elem == "modificar"){
+function FormPreguntaDistractorD(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDistractorE(elem){
-    if (elem == "modificar"){
+function FormPreguntaDistractorE(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaFecha(elem){
-    if (elem == "modificar"){
+function FormPreguntaFecha(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaResolucion(elem){
-    if (elem == "modificar"){
+function FormPreguntaResolucion(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaDni(elem){
-    if (elem == "modificar"){
+function FormPreguntaDni(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaNombre(elem){
-    if (elem == "modificar"){
+function FormPreguntaNombre(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormPreguntaNoElegida(elem){
+function FormPreguntaNoElegida(){
     document.getElementById("entradaDatos").action = "index.php";
 }
-function FormPreguntaArea(elem){
+function FormPreguntaArea(){
     document.getElementById("BusquedaDatos").action = "index.php";
 }
-function FormProcesoRegistrar(elem){
+function FormProcesoRegistrar(){
     document.getElementById("entradaDatos").action = "index.php";
 }
-function FormProcesoFechaInicio(elem){
-    if (elem == "modificar"){
+function FormProcesoFechaInicio(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormProcesoFechaFinal(elem){
-    if (elem == "modificar"){
+function FormProcesoFechaFinal(){
+    if (document.getElementById("modificar").checked){
+        activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
     }
-    else{
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
-function FormProcesoProceso(elem){
+function FormProcesoProceso(){
+    activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
 }
-function FormProcesoCantidadSeleccionados(elem){
+function FormProcesoCantidadSeleccionados(){
+    activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
-function FormProcesoDefinirCantidad(elem){
+function FormProcesoDefinirCantidad(){
+    activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
 }
+/////////////////////////////////7
+function activarTexto(){
+    document.getElementById("recibir-texto").style.display = "initial";
+}
+function desactivarTexto(){
+    document.getElementById("recibir-texto").style.display = "none";
+}
+function activarBuscar(){
+    document.getElementById("buscar-texto").style.display = "initial";
+}
+function desactivarBuscar(){
+    document.getElementById("buscar-texto").style.display = "none";
+}
+////////////////////////////////
