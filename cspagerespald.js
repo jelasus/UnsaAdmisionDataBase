@@ -622,6 +622,7 @@ function activarTexto(){
     document.getElementById("recibir-texto").style.display = "initial";
 }
 function desactivarTodo(){
+    alert("works");
     document.getElementById("recibir-texto").style.display = "none";
     document.getElementById("buscar-texto").style.display = "none";
     document.getElementById("FormularioPersonal").style.display = "none";
