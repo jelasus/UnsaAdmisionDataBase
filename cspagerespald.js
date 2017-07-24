@@ -156,7 +156,7 @@ function actualizarPersonal(elem){
     }
 }*/
 ///////////////////////////////////////////7
-function Modificar(elem){
+/*function Modificar(elem){
     alert("modificando");
 }
 //////////////////////7
@@ -167,9 +167,9 @@ function Ver(elem){
 function Registrar(elem){
     var space = document.getElementById("buscar-texto");
     space.style.display="initial";
-}
+}*/
 ///////////////////////////
-function hacer(elem){
+/*function hacer(elem){
 
     var modificar_b = document.getElementById("modificar");
     var ver_b = document.getElementById("ver");
@@ -186,17 +186,18 @@ function hacer(elem){
     else{
         showNothing();
     }
-}
+}*/
 ////////////////////////////////////
 /*function getDir(){
     document.getElementById("entradaDatos").action = colocar aqui
 }*/
 ////////////////PERSONAL-FUNCIONES////////////////////
-function FormPersonalRegistrar(){
+function FormPersonalRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").style.value = "$elem";
 }
 function FormPersonalDni(){
     desactivarBuscar();
