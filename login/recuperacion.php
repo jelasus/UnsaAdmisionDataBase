@@ -31,13 +31,11 @@
   </head>
   <body>
     <div id="caja">
-      <h1>login</h1>
-      <form action= "login_do.php"method = "POST">
-        <input id="usuario" name ="usuario" type="text" placeholder="Nombre de usuario"/>
-        <input id="password" name="password" type="password" placeholder="Password"/>
-        <input name="submit" type="submit" value="Entrar"/>
-        <br></br>
-        <a href="recuperacion.php">recuperacion de Contrasenha</a>;
+      <h1>Cual es su clave secreta</h1>
+      <form action= "login_re.php"method = "POST">
+        <input id="palabraclave" name ="palabraclave" type="password" placeholder="palabraclave"/>
+        <!--<input id="palabraclave" type="text" name="palabraclave" placeholder="palabraclave" /-->
+        <input name="submit" type="submit" value="recuperacion"/>
       </form>
     </div>
 
