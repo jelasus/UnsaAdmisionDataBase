@@ -2,8 +2,8 @@
     include 'login_conexion.php';
 
     session_start();
-    $apellido="Looo";//$_POST["apellido"];
-    $dni= 56431326;//$_POST["dni"];
+    $apellido=$_POST["apellido"];
+    $dni=$_POST["dni"];
 
     //tomo el usuario del login y veo su privilegio
     include 'usuario_privilegio.php';
