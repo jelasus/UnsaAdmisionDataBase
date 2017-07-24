@@ -1,0 +1,163 @@
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="iso-8559-1"/>
+<meta name="description" content="pagina de prueba html5"/>
+<meta name="keywords" content="computacion, alimentacion, diabetes, salud, arequipa"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="cspagerespald.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9" id = "page2">
+
+            <div class="container testimonial-group" class="container-fluid">
+
+            <div class="text-center" class="page-header">
+                <h1>Tabla de Formuladores</h1>
+            </div>
+                    
+            <div width="col-md-12">
+                <div class="panel panel-default" class="row text-center">
+                    <div class="panel-heading" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                        <h4 class="text-center">Tabla de Docentes UNSA proceso 2017<span class="fa fa-edit pull-right bigicon"></span></h4>
+                    </div>
+                    <div class="panel-body text-center" class="container testimonial-group">
+                        <div class="table-responsive" id="grid"></div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- you need to include the shieldui css and js assets in order for the grids to work -->
+    <link rel="stylesheet" type="text/css" href="http://prepbootstrap.com/Content/shieldui-lite/dist/css/light/all.min.css" />
+    <script type="text/javascript" src="http://prepbootstrap.com/Content/shieldui-lite/dist/js/shieldui-lite-all.min.js"></script>
+
+    <script type="text/javascript" src="http://prepbootstrap.com/Content/data/shortGridData.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $("#grid").shieldGrid({
+                                dataSource: {
+                                    data: gridData,
+                                    schema: {
+                                        fields: {
+                                            id: { path: "id", type: Number },
+                                            id1: { path: "id1", type: String },
+                                            id2: { path: "id2", type: String },
+                                            age: { path: "age", type: Number },
+                                            cargounsa: { path: "cargounsa", type: String },
+                                            dependencia: { path: "dependencia", type: String },
+                                            isActive: { path: "isActive", type: Boolean },
+                                            email: { path: "email", type: String },
+                                            cargoproceso: { path: "cargoproceso", type: String }
+
+
+
+                                        }
+                                    }
+                                },
+                                sorting: {
+                                    multiple: true
+                                },
+                                rowHover: false,
+                                columns: [
+                                    { field: "id", title: "DNI", width: "70px" },
+                                    { field: "id1", title: "Nombre", width: "100px" },
+                                    { field: "id2", title: "Apellido", width: "100px" },
+                                    { field: "age", title: "Edad", width: "80px" },
+                                    { field: "cargounsa", title: "Cargo Unsa", width: "80px"  },
+                                    { field: "dependencia", title: "Facultad", width: "100px"  },
+                                    { field: "isActive", title: "Participa", width: "70px"  },
+                                    { field: "email", title: "Email", width: "160px" },
+                                    { field: "cargoproceso", title: "Cargo Proceso", width: "120px", editor: myCustomEditor },
+                                    
+                                    {
+                                        width: "80px",
+                                        title: "Borrar",
+                                        buttons: [
+                                            { cls: "deleteButton", commandName: "delete", caption: "<img src='http://prepbootstrap.com/Content/images/template/BootstrapEditableGrid/delete.png' /><span>Delete</span>" }
+                                        ]
+                                    }
+                                ],
+                                editing: {
+                                    enabled: true,
+                                    event: "click",
+                                    type: "cell",
+                                    confirmation: {
+                                        "delete": {
+                                            enabled: true,
+                                            template: function (item) {
+                                                return "Delete row with ID = " + item.id
+                                            }
+                                        }
+                                    }
+                                },
+                                events:
+                                {
+                                    getCustomEditorValue: function (e) {
+                                        e.value = $("#dropdown").swidget().value();
+                                        $("#dropdown").swidget().destroy();
+                                    }
+                                }
+                            });
+
+                            function myCustomEditor(cell, item) {
+                                $('<div id="dropdown"/>')
+                                    .appendTo(cell)
+                                    .shieldDropDown({
+                                        dataSource: {
+                                            data: ["FORMULADORES", "TECNICOS", "CONTROLADORES", "CONTADORES", "CONTROLADORES DE PUERTA"]
+                                        },
+                                        value: !item["transport"] ? null : item["transport"].toString()
+                                    }).swidget().focus();
+                            }
+                        });
+</script>
+
+<style type="text/css">
+    .sui-button-cell
+    {
+        text-align: center;
+    }
+
+    .sui-checkbox
+    {
+        font-size: 17px !important;
+        padding-bottom: 4px !important;
+    }
+
+    .deleteButton img
+    {
+        margin-right: 3px;
+        vertical-align: bottom;
+    }
+
+    .bigicon
+    {
+        color: #5CB85C;
+        font-size: 20px;
+    }
+    .testimonial-group > .row {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .testimonial-group > .row > .col-xs-4 {
+        display: inline-block;
+        float: none;
+    }
+</style>
+
+            
+            </div>
+    </div>
