@@ -21,8 +21,7 @@ function showNothing(){
 }
 ///////////////////////////////////////////////77
 function search(elem){
-    desactivarBuscar();
-    desactivarTexto();
+    desactivarTodo();
     var personal = document.getElementById("personal");
     var proceso = document.getElementById("proceso");
     var pregunta = document.getElementById("pregunta");
@@ -106,91 +105,6 @@ function show(elem1,elem2){
         }
     }
 }
-/*function show(elem1,elem2){
-    /*var proceso = document.getElementById("page-proceso");
-    var pregunta = document.getElementById("page-pregunta");
-    var personal = document.getElementById("page-personal");
-    if (elem1.id == "proceso"){
-        actualizarProceso(elem2);
-        pregunta.style.display = "none";
-        personal.style.display = "none";
-        proceso.style.display = "initial";
-    }
-    else if (elem1.id == "pregunta"){
-        actualizarPregunta(elem2);
-        proceso.style.display = "none";
-        personal.style.display = "none";
-        pregunta.style.display = "initial";
-    }
-    else if (elem1.id == "personal"){
-        actualizarPersonal(elem2);
-        pregunta.style.display = "none";
-        proceso.style.display = "none";
-        personal.style.display = "initial";
-    }
-}
-function actualizarPregunta(elem){
-    var funcion1 = document.getElementById("page-pregunta-modificar");
-    var funcion2 = document.getElementById("page-pregunta-ver");
-    if (elem == "modificar"){
-        funcion1.style.display = "initial";
-    }
-    else if (elem == "ver"){
-        funcion2.style.display = "initial";
-    }
-}
-function actualizarProceso(elem){
-    var funcion1 = document.getElementById("page-proceso-modificar");
-    var funcion2 = document.getElementById("page-proceso-ver");
-    if (elem == "modificar"){
-        funcion1.style.display = "initial";
-    }
-    else if (elem == "ver"){
-        funcion2.style.display = "initial";
-    }
-}
-function actualizarPersonal(elem){
-    var funcion = document.getElementById("page-personal-ver");
-    if (elem == "ver"){
-        funcion.style.display = "initial";
-    }
-}*/
-///////////////////////////////////////////7
-/*function Modificar(elem){
-    alert("modificando");
-}
-//////////////////////7
-function Ver(elem){
-    alert("leyendo");
-}
-//////////////////////////7
-function Registrar(elem){
-    var space = document.getElementById("buscar-texto");
-    space.style.display="initial";
-}*/
-///////////////////////////
-/*function hacer(elem){
-
-    var modificar_b = document.getElementById("modificar");
-    var ver_b = document.getElementById("ver");
-    var registrar_b = document.getElementById("registrar");
-    if (modificar_b.checked){
-        Modificar(elem);
-    }
-    else if (ver_b.checked){
-        Ver(elem);
-    }
-    else if (registrar_b.checked){
-        Registrar(elem);
-    }
-    else{
-        showNothing();
-    }
-}*/
-////////////////////////////////////
-/*function getDir(){
-    document.getElementById("entradaDatos").action = colocar aqui
-}*/
 ////////////////PERSONAL-FUNCIONES////////////////////
 function FormPersonalRegistrar(elem){
     if (document.getElementById("registrar").checked){
@@ -534,6 +448,7 @@ function FormPreguntaArea(elem){
 }
 /////////////PROCESO-FUNCIONES//////////////7
 function FormProcesoRegistrar(elem){
+    desactivarTodo();
     if (document.getElementById("registrar").checked){
         activarFProceso();
         document.getElementById("FProceso").action = "index.php";
@@ -541,6 +456,7 @@ function FormProcesoRegistrar(elem){
     }
 }
 function FormProcesoFechaInicio(elem){
+    desactivarTodo();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -553,6 +469,7 @@ function FormProcesoFechaInicio(elem){
     }
 }
 function FormProcesoFechaFinal(elem){
+    desactivarTodo();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
@@ -565,17 +482,19 @@ function FormProcesoFechaFinal(elem){
     }
 }
 function FormProcesoProceso(elem){
+    desactivarTodo();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
     document.getElementById("valor-submit").value = elem;
 }
 function FormProcesoCantidadSeleccionados(elem){
+    desactivarTodo();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
     document.getElementById("texto-submit").value = elem;
 }
 function FormProcesoDefinirCantidad(elem){
-
+    desactivarTodo
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
     document.getElementById("texto-submit").value = elem;
@@ -584,32 +503,23 @@ function FormProcesoDefinirCantidad(elem){
 function activarTexto(){
     document.getElementById("recibir-texto").style.display = "initial";
 }
-function desactivarTexto(){
-    document.getElementById("recibir-texto").style.display = "none";
-}
 function activarBuscar(){
     document.getElementById("buscar-texto").style.display = "initial";
-}
-function desactivarBuscar(){
-    document.getElementById("buscar-texto").style.display = "none";
 }
 function activarFPersonal(){
     document.getElementById("FormularioPersonal").style.display = "initial";
 }
-function desactivarFPersonal(){
-    document.getElementById("FormularioPersonal").style.display = "none";
-}
 function activarFPregunta(){
     document.getElementById("FormularioPregunta").style.display = "initial";
-}
-function desactivarFPregunta(){
-    document.getElementById("FormularioPregunta").style.display = "none";
 }
 function activarFProceso(){
     document.getElementById("FormularioProceso").style.display = "initial";
 }
-function desactivarFProceso(){
+function desactivarTodo(){
     document.getElementById("FormularioProceso").style.display = "none";
+    document.getElementById("FormularioPregunta").style.display = "none";
+    document.getElementById("FormularioPersonal").style.display = "none";
+    document.getElementById("recibir-texto").style.display = "none";
+    document.getElementById("buscar-texto").style.display = "none";
 }
-
 ////////////////////////////////
