@@ -69,6 +69,7 @@ function show(elem1,elem2){
             pagePersonalRegistrar.style.display="initial";
         }
         else if (elem1.id == "pregunta") {
+            alert("ALERTA");
             pagePregunta.style.display="initial";
             pagePreguntaRegistrar.style.display="initial";
         }
@@ -291,6 +292,7 @@ function FormPersonalC(elem){
     document.getElementById("valor-submit").value = elem;
 }
 /////////////PREGUNTA-FUNCIONES//////////////
+
 function FormPreguntaRegistrar(elem){
     desactivarTodo();
     if (document.getElementById("registrar").checked){
