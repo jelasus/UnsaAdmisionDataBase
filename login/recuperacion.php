@@ -32,7 +32,7 @@
   <body>
     <div id="caja">
       <h1>Cual es su clave secreta</h1>
-      <form action= "login_re.php"method = "POST">
+      <form action= "login_recuperar.php"method = "POST">
         <input id="palabraclave" name ="palabraclave" type="password" placeholder="palabraclave"/>
         <!--<input id="palabraclave" type="text" name="palabraclave" placeholder="palabraclave" /-->
         <input name="submit" type="submit" value="recuperacion"/>
