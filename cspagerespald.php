@@ -186,8 +186,8 @@
                         <input id = "valor-submit" type="submit" value="Buscar">
                     </form>
                 </div>
-                <div id ="FormularioPersona">
-                    <form id = "FPersona">
+                <div id ="FormularioPersonal">
+                    <form id = "FPersonal" method = "POST">
                       <div class="form-group">
                         <label for="DNI">DNI</label>
                         <input type="DNI" class="form-control" id="DNI" aria-describedby="DNIhelp" placeholder="Ingresar DNI">
@@ -259,11 +259,11 @@
                         <label for="exampleInputFile">Subir Archivo</label>
                         <input type="file" class="form-control-file" id="Subir_Archivo" aria-describedby="Subir_ArchivoHelp">
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <input id = "FPersonalSubmit" type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
                 <div id = "FormularioPregunta">
-                    <form id = "FPregunta">
+                    <form id = "FPregunta" method = "POST">
                       <div class="form-group">
                         <label for="ID_pregunta">ID_pregunta</label>
                         <input type="ID_pregunta" class="form-control" id="ID_pregunta" aria-describedby="DNIhelp" placeholder="Ingresar ID_pregunta">
@@ -315,12 +315,12 @@
 
                       <div class="form-group">
                         <label for="Enunciado">Enunciado</label>
-                        <textarea class="form-control" id="Enunciado" rows="3"></textarea>
+                        <textarea class="form-control" id="Enunciado" rows="3" required></textarea>
                       </div>
 
                       <div class="form-group">
                         <label for="Distractores">Distractores</label>
-                        <textarea class="form-control" id="Distractores" rows="5"></textarea>
+                        <textarea class="form-control" id="Distractores" rows="5" required></textarea>
                       </div>
 
                       <div class="form-group">
@@ -328,7 +328,7 @@
                         <input type="file" class="form-control-file" id="Subir_Archivo2" aria-describedby="Subir_ArchivoHelp">
                       </div>
 
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <input id = "FPreguntaSubmit" type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
                 <div id = "FormularioProceso">
@@ -347,7 +347,6 @@
                         <label for="Fecha_Inicial">Fecha_Inicial</label>
                         <input type="Fecha_Inicial" class="form-control" id="Fecha_Inicial" aria-describedby="Fecha_Inicialhelp" placeholder="Ingresar Fecha_Inicial">
                       </div>
-
                        <div class="form-group">
                         <label for="Fecha_Final">Fecha_Final</label>
                         <input type="Fecha_Final" class="form-control" id="Fecha_Final" aria-describedby="Fecha_Finalhelp" placeholder="Ingresar Fecha_Final">
@@ -364,7 +363,7 @@
                         </select>
                       </div>   
 
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <input id = "FProcesoSubmit" type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div> 

@@ -195,9 +195,11 @@ function Registrar(elem){
 function FormPersonalRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
-    activarTexto();
-    document.getElementById("entradaDatos").action = "index.php";
-    document.getElementById("texto-submit").value = elem;
+    if (document.getElementById("registrar").checked){
+        activarFPersonal();
+        document.getElementById("FPersonal").action = "index.php";
+        document.getElementById("FPersonalSubmit").value = elem;
+    }
 }
 function FormPersonalDni(elem){
     desactivarBuscar();
@@ -392,8 +394,11 @@ function FormPersonalC(elem){
 function FormPreguntaRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
-    document.getElementById("entradaDatos").action = "index.php";
-    document.getElementById("texto-submit").value = elem;
+    if (document.getElementById("registrar").checked){
+        activarFPregunta();
+        document.getElementById("FPregunta").action = "index.php";
+        document.getElementById("FPreguntaSubmit").value = elem;
+    }
 }
 function FormPreguntaId(elem){
     desactivarBuscar();
@@ -589,11 +594,15 @@ function FormPreguntaArea(elem){
     document.getElementById("BusquedaDatos").action = "index.php";
     document.getElementById("valor-submit").value = elem;
 }
+/////////////PROCESO-FUNCIONES//////////////7
 function FormProcesoRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
-    document.getElementById("entradaDatos").action = "index.php";
-    document.getElementById("texto-submit").value = elem;
+    if (document.getElementById("registrar").checked){
+        activarFProceso();
+        document.getElementById("FProceso").action = "index.php";
+        document.getElementById("FProcesoSubmit").value = elem;
+    }
 }
 function FormProcesoFechaInicio(elem){
     desactivarBuscar();
@@ -657,4 +666,23 @@ function activarBuscar(){
 function desactivarBuscar(){
     document.getElementById("buscar-texto").style.display = "none";
 }
+function activarFPersonal(){
+    document.getElementById("FormularioPersonal").style.display = "initial";
+}
+function desactivarFPersonal(){
+    document.getElementById("FormularioPersonal").style.display = "none";
+}
+function activarFPregunta(){
+    document.getElementById("FormularioPregunta").style.display = "initial";
+}
+function desactivarFPregunta(){
+    document.getElementById("FormularioPregunta").style.display = "none";
+}
+function activarFProceso(){
+    document.getElementById("FormularioProceso").style.display = "initial";
+}
+function desactivarFProceso(){
+    document.getElementById("FormularioProceso").style.display = "none";
+}
+
 ////////////////////////////////
