@@ -107,55 +107,70 @@
         <div id = "body-page">
             <div id = "page1">
                 <div id = "page-personal" class="btn-group-vertical">
-                    <button id="dni" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por DNI</button>
-                    <button id="apellido" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Apellido</button>
-                    <button id="nombre" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Nombre</button>
-                    <button id="dependencia" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por dependencia</button>
-                    <button id="correo" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por correo</button>
-                    <button id="categoria" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por categoria</button>
-                    <button id="regimen" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por regimen</button>
-                    <button id="estado" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por estado</button>
-                    <button id="cui" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por CUI</button>
-                    <button id="cargo-proceso" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cargo-Proceso</button>
-                    <button id="cargo-unsa" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cargo-Unsa</button>
-                    <button id="infoHistorica" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Informacion Historica</button>
-                    <div id = "page-personal-ver" class="btn-group-vertical">
-                        <button id="A" type="button" class="btn btn-primary" onclick="hacer(this.id)">A</button>
-                        <button id="B" type="button" class="btn btn-primary" onclick="hacer(this.id)">B</button>
-                        <button id="C" type="button" class="btn btn-primary" onclick="hacer(this.id)">C</button>
+                    <div id="page-personal-registrar">
+                        <button id="RegistrarPersonal" type="button" class="btn btn-primary" onclick="FormPersonalRegistrar(this.id)">Registrar una nueva persona</button>
+                    </div>
+                    <div id = "page-personal-modificar-ver">
+                        <button id="dni" type="button" class="btn btn-primary" onclick="FormPersonalDni(this-id)">Por DNI</button>
+                        <button id="apellido" type="button" class="btn btn-primary" onclick="FormPersonalApellido(this.id)">Por Apellido</button>
+                        <button id="nombre" type="button" class="btn btn-primary" onclick="FormPersonalNombre(this.id)">Por Nombre</button>
+                        <button id="dependencia" type="button" class="btn btn-primary" onclick="FormPersonalDependencia(this.id)">Por dependencia</button>
+                        <button id="correo" type="button" class="btn btn-primary" onclick="FormPersonalCorreo(this.id)">Por correo</button>
+                        <button id="categoria" type="button" class="btn btn-primary" onclick="FormPersonalCategoria(this.id)">Por categoria</button>
+                        <button id="regimen" type="button" class="btn btn-primary" onclick="FormPersonalRegimen(this.id)">Por regimen</button>
+                        <button id="estado" type="button" class="btn btn-primary" onclick="FormPersonalEstado(this.id)">Por estado</button>
+                        <button id="cui" type="button" class="btn btn-primary" onclick="FormPersonalCui(this.id)">Por CUI</button>
+                        <button id="cargo-proceso" type="button" class="btn btn-primary" onclick="FormPersonalCargo-Proceso(this.id)">Por Cargo-Proceso</button>
+                        <button id="cargo-unsa" type="button" class="btn btn-primary" onclick="FormPersonalCargo-Unsa(this.id)">Por Cargo-Unsa</button>
+                        <button id="infoHistorica" type="button" class="btn btn-primary" onclick="FormPersonalInfoHistorica(this.id)">Por Informacion Historica</button>
+                        <div id = "page-personal-ver" class="btn-group-vertical">
+                            <button id="A" type="button" class="btn btn-primary" onclick="FormPersonalA(this.id)">A</button>
+                            <button id="B" type="button" class="btn btn-primary" onclick="FormPersonalB(this.id)">B</button>
+                            <button id="C" type="button" class="btn btn-primary" onclick="FormPersonalC(this.id)">C</button>
+                        </div>
                     </div>
                 </div>
                 <div id = "page-pregunta" class="btn-group-vertical">
-                    <button id="ID Pregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por ID de la pregunta</button>
-                    <button id="preguntas-elegidas" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Preguntas Elegidas</button>
-                    <button id="dificultad" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Dificultad</button>
-                    <button id="enunciado" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Enunciado</button>
-                    <button id="distractor A" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor A</button>
-                    <button id="distractor B" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor B</button>
-                    <button id="distractor C" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor C</button>
-                    <button id="distractor D" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor D</button>
-                    <button id="distractor E" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por distractor E</button>
-                    <button id="fecha" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha</button>
-                    <button id="resolucion" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Resolucion</button>
-                    <button id="dniPregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por DNI</button>
-                    <button id="nombrePregunta" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Nombre de la pregunta</button>
-                    <div id = "page-pregunta-modificar" class="btn-group-vertical">
-                        <button id="no-elegida" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Pregunta no Elegida</button>
+                    <div id="page-pregunta-registrar">
+                        <button id="RegistrarPregunta" type="button" class="btn btn-primary" onclick="FormPreguntaRegistrar(this.id)">Registrar una nueva pregunta</button>
                     </div>
-                    <div id = "page-pregunta-ver" class="btn-group-vertical">
-                        <button id="area" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Area</button>
+                    <div id="page-pregunta-modificar-ver">
+                        <button id="ID Pregunta" type="button" class="btn btn-primary" onclick="FormPreguntaId(this.id)">Por ID de la pregunta</button>
+                        <button id="preguntas-elegidas" type="button" class="btn btn-primary" onclick="FormPreguntaPreguntasElegidas(this.id)">Por Preguntas Elegidas</button>
+                        <button id="dificultad" type="button" class="btn btn-primary" onclick="FormPreguntaDificultad(this.id)">Por Dificultad</button>
+                        <button id="enunciado" type="button" class="btn btn-primary" onclick="FormPreguntaEnunciado(this.id)">Por Enunciado</button>
+                        <button id="distractor A" type="button" class="btn btn-primary" onclick="FormPreguntaDistractorA(this.id)">Por distractor A</button>
+                        <button id="distractor B" type="button" class="btn btn-primary" onclick="FormPreguntaDistractorB(this.id)">Por distractor B</button>
+                        <button id="distractor C" type="button" class="btn btn-primary" onclick="FormPreguntaDistractorC(this.id)">Por distractor C</button>
+                        <button id="distractor D" type="button" class="btn btn-primary" onclick="FormPreguntaDistractorD(this.id)">Por distractor D</button>
+                        <button id="distractor E" type="button" class="btn btn-primary" onclick="FormPreguntaDistractorE(this.id)">Por distractor E</button>
+                        <button id="fecha" type="button" class="btn btn-primary" onclick="FormPreguntaFecha(this.id)">Por Fecha</button>
+                        <button id="resolucion" type="button" class="btn btn-primary" onclick="FormPreguntaResolucion(this.id)">Por Resolucion</button>
+                        <button id="dniPregunta" type="button" class="btn btn-primary" onclick="FormPreguntaDni(this.id)">Por DNI</button>
+                        <button id="nombrePregunta" type="button" class="btn btn-primary" onclick="FormPreguntaNombre(this.id)">Por Nombre de la pregunta</button>
+                        <div id = "page-pregunta-modificar" class="btn-group-vertical">
+                            <button id="no-elegida" type="button" class="btn btn-primary" onclick="FormPreguntaNoElegida(this.id)">Por Pregunta no Elegida</button>
+                        </div>
+                        <div id = "page-pregunta-ver" class="btn-group-vertical">
+                            <button id="area" type="button" class="btn btn-primary" onclick="FormPreguntaArea(this.id)">Por Area</button>
+                        </div>
                     </div>
                 </div>
                 <div id = "page-proceso" class="btn-group-vertical">
-                    <button id="año" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Año</button>
-                    <button id="fecha-inicio" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha de Inicio</button>
-                    <button id="fecha-final" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha del Final</button>
-                    <div id ="page-proceso-ver" class="btn-group-vertical">
-                        <button id="procesoProceso" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Proceso</button>
+                    <div id="page-proceso-registrar">
+                        <button id="RegistrarProceso" type="button" class="btn btn-primary" onclick="FormPreguntaRegistrar(this.id)">Registrar un nuevo proceso</button>
                     </div>
-                    <div id ="page-proceso-modificar" class="btn-group-vertical">
-                        <button id="cantidadSelecionados" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Seleccionados por Funcion</button>
-                        <button id="definirCantidad" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Areas en las Funciones</button>
+                    <div id = "page-proceso-modificar-ver">
+                        <button id="año" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Año</button>
+                        <button id="fecha-inicio" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha de Inicio</button>
+                        <button id="fecha-final" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Fecha del Final</button>
+                        <div id ="page-proceso-ver" class="btn-group-vertical">
+                            <button id="procesoProceso" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Proceso</button>
+                        </div>
+                        <div id ="page-proceso-modificar" class="btn-group-vertical">
+                            <button id="cantidadSelecionados" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Seleccionados por Funcion</button>
+                            <button id="definirCantidad" type="button" class="btn btn-primary" onclick="hacer(this.id)">Por Cantidad de Areas en las Funciones</button>
+                        </div>
                     </div>
                 </div>
                 <div id = "buscar-texto">

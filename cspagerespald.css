@@ -201,7 +201,7 @@ body{
 #recibir-texto{
     display: none;
 }
-/*#page-personal-ver{
+#page-personal-ver{
     display: none;
 }
 #page-pregunta-ver{
@@ -215,7 +215,7 @@ body{
 }
 #page-proceso-modificar{
     display: none;
-}*/
+}
 #nav-submenu{
     background-color: forestgreen;
     margin: 0% 0%;
