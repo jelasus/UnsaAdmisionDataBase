@@ -12,11 +12,13 @@
         $sql = mysqli_query($bd,"UPDATE Participante SET Apellidos = '$apellido' WHERE DNI = $dni");
         if($sql)
             echo "<script type='text/javascript'>alert('Se modificó correctamente')</script>";
-        else
+        else{
             echo "<script type='text/javascript'>alert('No se ha modificado')</script>";
+        }
     }
-    else 
-        echo "<script type='text/javascript'>alert('No tiene los sufcientes privilegios.')</script>";
-    
+    else{ 
+        echo "<script type='text/javascript'>alert('No tiene los sufcientes privilegios.')</script>"; 
+    }
+    echo "<script language='javascript' type='text/javascript'> location.href='cspagerespald.html' </script>"; 
 
 ?>

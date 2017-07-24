@@ -14,12 +14,10 @@
             echo "<script type='text/javascript'>alert('Se modificó correctamente')</script>";
         else{
             echo "<script type='text/javascript'>alert('No se ha modificado')</script>";
-            echo "<script language='javascript' type='text/javascript'> location.href='cspagerespald.html' </script>";  
         }
     }
     else{
         echo "<script type='text/javascript'>alert('No tiene los sufcientes privilegios.')</script>";
-        echo "<script language='javascript' type='text/javascript'> location.href='cspagerespald.html' </script>";  
     }
-
+    echo "<script language='javascript' type='text/javascript'> location.href='cspagerespald.html' </script>";  
 ?>
