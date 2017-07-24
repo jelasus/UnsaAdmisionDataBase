@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-07-2017 a las 22:25:38
+-- Tiempo de generación: 24-07-2017 a las 11:39:12
 -- Versión del servidor: 10.1.24-MariaDB
 -- Versión de PHP: 7.1.6
 
@@ -222,9 +222,11 @@ CREATE TABLE IF NOT EXISTS `Curso&Area` (
 --
 
 INSERT INTO `Curso&Area` (`idCurso&Area`, `idCurso`, `idArea`) VALUES
+(8946231, 564654, 3),
 (20154864, 564121, 1),
 (84651231, 987456, 2),
-(87645561, 654654, 3);
+(87645561, 654654, 3),
+(98455613, 564121, 3);
 
 -- --------------------------------------------------------
 
@@ -241,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `Participacion` (
   PRIMARY KEY (`idParticipacion`),
   KEY `fk_Participación_2_idx` (`idProceso`),
   KEY `fk_Participacion_1_idx` (`idParticipante&Cargos`)
-) ENGINE=InnoDB AUTO_INCREMENT=1006 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1007 DEFAULT CHARSET=utf8;
 
 --
 -- RELACIONES PARA LA TABLA `Participacion`:
@@ -260,7 +262,8 @@ INSERT INTO `Participacion` (`idParticipacion`, `idProceso`, `idParticipante&Car
 (1002, 2, 100002, 1),
 (1003, 3, 100003, 1),
 (1004, 4, 100004, 0),
-(1005, 5, 100005, 1);
+(1005, 5, 100005, 1),
+(1006, 5, 100003, 1);
 
 -- --------------------------------------------------------
 
@@ -291,13 +294,18 @@ CREATE TABLE IF NOT EXISTS `Participante` (
 --
 
 INSERT INTO `Participante` (`DNI`, `Apellidos`, `Nombres`, `Dependencia/Facultad`, `Correo`, `Categoria`, `Regimen`, `Estado`, `CUI`) VALUES
+(986512, 'Quevedo', 'Juanjo', 'Fisica', 'quevedo123@gmail.com', 'Administrador', 'Normal', 1, 412322),
+(12659895, 'Salazar', 'Juanjo', 'Psicologia', 'juanjo123@gmail.com', 'Normal', 'Docente', 1, 234851),
 (23431234, 'Salazar', 'Kevin', 'Ciencia de la Comunicacion', 'kst_kevin@gmail.com', 'practicante', 'Normal', 1, 20160245),
-(54321641, 'Soncco', 'Carlos', 'Ciencia de la Computacion', 'carlosSl@gmail.com', 'Alumno', 'Normal', 1, 20160757),
+(54321641, 'Soncco', 'Carlos', 'Ciencia de la Computacion', 'darientlv@gmail.com', 'Alumno', 'Normal', 1, 20160757),
 (56431326, 'Torrez', 'Gabriel', 'Ing.Telecomunicaciones', 'gabriel_torres@gmail.com', '5to Anio', 'Normal', 1, 54212312),
+(56465423, 'Vargas', 'Gabriel', 'Arquitectura', 'vargass@gmail.com', 'Docente', 'Normal', 1, 651321),
 (65412312, 'Neyra', 'Dereck', 'Trabajo Social', 'neyraimport@gmail.com', 'Alumno', 'Normal', 1, 21456532),
 (68465132, 'Laquise', 'Juan', 'Enfermeria', 'juan_L@gmail.com', 'Docente', 'Normal', 1, 54789621),
 (74652132, 'Moroco ', 'Felix', 'Ingenieria Civil', 'felixks@gmail.com', 'Nombrado', 'Normal', 1, 23165478),
-(89465456, 'Villanueva', 'Fernando', 'Medicina', 'villa_fer@gmail.com', 'Docente', 'Normal', 1, 65321456);
+(89465456, 'Villanueva', 'Fernando', 'Medicina', 'villa_fer@gmail.com', 'Docente', 'Normal', 1, 65321456),
+(89746542, 'Ccama', 'alex', 'Filosofia', 'ccamacordo@gmail.com', 'Normal', 'Docente', 1, 234894),
+(89756120, 'Cordova', 'Javier', 'Literatura', 'javicho@gmail.com', 'Normal', 'Alumno', 1, 213147);
 
 -- --------------------------------------------------------
 
@@ -699,8 +707,10 @@ CREATE TABLE IF NOT EXISTS `Tipo_Usuario` (
 --
 
 INSERT INTO `Tipo_Usuario` (`idTipo_Usuario`, `Nombre`, `Privilegio`) VALUES
-(1, 'Admibistrador', '2'),
-(2, 'Operador', '1');
+(1, 'Administrador', '2'),
+(2, 'Operador', '1'),
+(3, 'administrador', '2'),
+(4, 'Operador', '1');
 
 -- --------------------------------------------------------
 
@@ -754,6 +764,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `DNI` varchar(45) NOT NULL,
   `idTipo_Usuario` int(11) NOT NULL COMMENT '		',
   `Online` tinyint(1) NOT NULL,
+  `Palabraclave` varchar(45) NOT NULL,
   PRIMARY KEY (`Nombre`),
   KEY `fk_Usuario_1_idx` (`idTipo_Usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -768,12 +779,12 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
 -- Volcado de datos para la tabla `Usuario`
 --
 
-INSERT INTO `Usuario` (`Nombre`, `Correo`, `Contrasenha`, `DNI`, `idTipo_Usuario`, `Online`) VALUES
-('alexsoto', 'alexcondo@gmail.com', 'alexander123', '846564311', 2, 1),
-('carlos123', 'carlossi@gmail.com', 'carlos123', '54321641', 1, 0),
-('fernandocs', 'villa_fer@gmail.com', 'fernanflow', '89465456', 2, 0),
-('jesuslazo23', 'jesuslazo@gmail.com', 'jesuslazo', '65642113', 1, 0),
-('kevinkst', 'kst_kevin@gmail.com', 'kevin.123', '23431234', 2, 0);
+INSERT INTO `Usuario` (`Nombre`, `Correo`, `Contrasenha`, `DNI`, `idTipo_Usuario`, `Online`, `Palabraclave`) VALUES
+('alexsoto', 'alexcondo@gmail.com', 'alexander123', '846564311', 2, 1, 'condor'),
+('carlos123', 'carlossi@gmail.com', 'carlos123', '54321641', 1, 0, 'arequipa'),
+('fernandocs', 'villa_fer@gmail.com', 'fernanflow', '89465456', 2, 0, 'descansar'),
+('jesuslazo23', 'jesuslazo@gmail.com', 'jesuslazo', '65642113', 1, 0, 'Sajiapruebeme'),
+('kevinkst', 'kst_kevin@gmail.com', 'kevin.123', '23431234', 2, 0, 'Barreras');
 
 --
 -- Restricciones para tablas volcadas
