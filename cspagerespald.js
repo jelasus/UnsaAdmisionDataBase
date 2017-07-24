@@ -455,6 +455,19 @@ function FormProcesoRegistrar(elem){
         document.getElementById("FProcesoSubmit").value = elem;
     }
 }
+function FormProcesoAño(elem){
+    desactivarTodo();
+    if (document.getElementById("modificar").checked){
+        activarTexto();
+        document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
+    }
+    else if (document.getElementById("ver").checked){
+        activarBuscar();
+        document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
+    }
+}
 function FormProcesoFechaInicio(elem){
     desactivarTodo();
     if (document.getElementById("modificar").checked){
