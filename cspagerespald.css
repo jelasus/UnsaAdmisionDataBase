@@ -187,12 +187,15 @@ body{
 }
 
 #page-personal{
+    width: 100%;
     display: none;
 }
 #page-pregunta{
+    width: 100%;
     display: none;
 }
 #page-proceso{
+    width: 100%;
     display: none;
 }
 #buscar-texto{
@@ -338,7 +341,7 @@ ul li:hover ~ul{
     margin: 0px 0px;
     float: left;
     height: 100%;
-    width: 50%;
+    width: 30%;
 }
 
 #page2{
@@ -347,7 +350,7 @@ ul li:hover ~ul{
     margin: 0px 0px;
     float: right;
     height: 100%;
-    width: 50%;
+    width: 70%;
 }
 
 #footer-page{

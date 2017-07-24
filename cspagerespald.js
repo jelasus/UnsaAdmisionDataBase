@@ -129,194 +129,252 @@ function formulario(){
 }
 ////////////////PERSONAL-FUNCIONES////////////////////
 function FormPersonalRegistrar(elem){
-
+    document.getElementById("entradaDatos").action = "index.php";
 }
 function FormPersonalDni(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalApellido(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalNombre(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalDependencia(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalCorreo(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalCategoria(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalRegimen(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalEstado(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalCui(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalCargoProceso(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalCargoUnsa(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalInfoHistorica(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPersonalA(elem){
-    document.getElementById("entradaDatos").action = ;
+    document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormPersonalB(elem){
-    document.getElementById("entradaDatos").action = ;
+    document.getElementById("BusquedaDatos").action = "index.php";
 }
 function FormPersonalC(elem){
-    document.getElementById("entradaDatos").action = ;
+    document.getElementById("BusquedaDatos").action = "index.php";
 }
 /////////////PREGUNTA-FUNCIONES//////////////
 function FormPreguntaRegistrar(elem){
-    document.getElementById("entradaDatos").action = ;
+    document.getElementById("entradaDatos").action = "index.php";
 }
 function FormPreguntaId(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaPreguntasElegidas(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDificultad(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaEnunciado(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDistractorA(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDistractorB(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDistractorC(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDistractorD(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaDistractorE(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
 }
 function FormPreguntaFecha(elem){
     if (elem == "modificar"){
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("entradaDatos").action = "index.php";
     }
     else{
-        document.getElementById("entradaDatos").action = ;
+        document.getElementById("BusquedaDatos").action = "index.php";
     }
+}
+function FormPreguntaResolucion(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = "index.php";
+    }
+    else{
+        document.getElementById("BusquedaDatos").action = "index.php";
+    }
+}
+function FormPreguntaDni(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = "index.php";
+    }
+    else{
+        document.getElementById("BusquedaDatos").action = "index.php";
+    }
+}
+function FormPreguntaNombre(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = "index.php";
+    }
+    else{
+        document.getElementById("BusquedaDatos").action = "index.php";
+    }
+}
+function FormPreguntaNoElegida(elem){
+    document.getElementById("entradaDatos").action = "index.php";
+}
+function FormPreguntaArea(elem){
+    document.getElementById("BusquedaDatos").action = "index.php";
+}
+function FormProcesoRegistrar(elem){
+    document.getElementById("entradaDatos").action = "index.php";
+}
+function FormProcesoFechaInicio(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = "index.php";
+    }
+    else{
+        document.getElementById("BusquedaDatos").action = "index.php";
+    }
+}
+function FormProcesoFechaFinal(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = "index.php";
+    }
+    else{
+        document.getElementById("BusquedaDatos").action = "index.php";
+    }
+}
+function FormProcesoProceso(elem){
+    document.getElementById("BusquedaDatos").action = "index.php";
+}
+function FormProcesoCantidadSeleccionados(elem){
+    document.getElementById("entradaDatos").action = "index.php";
+}
+function FormProcesoDefinirCantidad(elem){
+    document.getElementById("entradaDatos").action = "index.php";
 }
