@@ -64,16 +64,15 @@ function show(elem1,elem2){
     PreguntaVer.style.display="none";
     PreguntaModificar.style.display="none";
     if (elem2 == "registrar"){
-        if (elem1.id == "personal"){
+        if (elem1 == "personal"){
             pagePersonal.style.display="initial";
             pagePersonalRegistrar.style.display="initial";
         }
-        else if (elem1.id == "pregunta") {
-            alert("ALERTA");
+        else if (elem1 == "pregunta") {
             pagePregunta.style.display="initial";
             pagePreguntaRegistrar.style.display="initial";
         }
-        else if (elem1.id == "proceso"){
+        else if (elem1 == "proceso"){
             pageProceso.style.display="initial";
             pageProcesoRegistrar.style.display="initial";
         }
