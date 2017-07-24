@@ -197,388 +197,452 @@ function FormPersonalRegistrar(elem){
     desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
-    document.getElementById("texto-submit").style.value = "$elem";
+    document.getElementById("texto-submit").value = elem;
 }
-function FormPersonalDni(){
+function FormPersonalDni(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalApellido(){
+function FormPersonalApellido(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalNombre(){
+function FormPersonalNombre(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalDependencia(){
+function FormPersonalDependencia(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalCorreo(){
+function FormPersonalCorreo(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalCategoria(){
+function FormPersonalCategoria(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalRegimen(){
+function FormPersonalRegimen(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalEstado(){
+function FormPersonalEstado(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalCui(){
+function FormPersonalCui(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalCargoProceso(){
+function FormPersonalCargoProceso(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalCargoUnsa(){
+function FormPersonalCargoUnsa(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalInfoHistorica(){
+function FormPersonalInfoHistorica(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPersonalA(){
+function FormPersonalA(elem){
     desactivarBuscar();
     desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
+    document.getElementById("valor-submit").value = elem;
 }
-function FormPersonalB(){
+function FormPersonalB(elem){
     desactivarBuscar();
     desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
+    document.getElementById("valor-submit").value = elem;
 }
-function FormPersonalC(){
+function FormPersonalC(elem){
     desactivarBuscar();
     desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
+    document.getElementById("valor-submit").value = elem;
 }
 /////////////PREGUNTA-FUNCIONES//////////////
-function FormPreguntaRegistrar(){
+function FormPreguntaRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").value = elem;
 }
-function FormPreguntaId(){
+function FormPreguntaId(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaPreguntasElegidas(){
+function FormPreguntaPreguntasElegidas(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDificultad(){
+function FormPreguntaDificultad(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaEnunciado(){
+function FormPreguntaEnunciado(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDistractorA(){
+function FormPreguntaDistractorA(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDistractorB(){
+function FormPreguntaDistractorB(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDistractorC(){
+function FormPreguntaDistractorC(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDistractorD(){
+function FormPreguntaDistractorD(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDistractorE(){
+function FormPreguntaDistractorE(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaFecha(){
+function FormPreguntaFecha(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaResolucion(){
+function FormPreguntaResolucion(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaDni(){
+function FormPreguntaDni(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaNombre(){
+function FormPreguntaNombre(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormPreguntaNoElegida(){
+function FormPreguntaNoElegida(elem){
     desactivarBuscar();
     desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").value = elem;
 }
-function FormPreguntaArea(){
+function FormPreguntaArea(elem){
     desactivarBuscar();
     desactivarTexto();
     document.getElementById("BusquedaDatos").action = "index.php";
+    document.getElementById("valor-submit").value = elem;
 }
-function FormProcesoRegistrar(){
+function FormProcesoRegistrar(elem){
     desactivarBuscar();
     desactivarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").value = elem;
 }
-function FormProcesoFechaInicio(){
+function FormProcesoFechaInicio(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormProcesoFechaFinal(){
+function FormProcesoFechaFinal(elem){
     desactivarBuscar();
     desactivarTexto();
     if (document.getElementById("modificar").checked){
         activarTexto();
         document.getElementById("entradaDatos").action = "index.php";
+        document.getElementById("texto-submit").value = elem;
     }
     else if (document.getElementById("ver").checked){
         activarBuscar();
         document.getElementById("BusquedaDatos").action = "index.php";
+        document.getElementById("valor-submit").value = elem;
     }
 }
-function FormProcesoProceso(){
+function FormProcesoProceso(elem){
     desactivarBuscar();
     desactivarTexto();
     activarBuscar();
     document.getElementById("BusquedaDatos").action = "index.php";
+    document.getElementById("valor-submit").value = elem;
 }
-function FormProcesoCantidadSeleccionados(){
+function FormProcesoCantidadSeleccionados(elem){
     desactivarBuscar();
     desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").value = elem;
 }
-function FormProcesoDefinirCantidad(){
+function FormProcesoDefinirCantidad(elem){
     desactivarBuscar();
     desactivarTexto();
     activarTexto();
     document.getElementById("entradaDatos").action = "index.php";
+    document.getElementById("texto-submit").value = elem;
 }
 /////////////////////////////////7
 function activarTexto(){

@@ -241,6 +241,15 @@ body{
     height: 100%;
     width: 100%;
 }
+#FormularioPersona{
+    display: none;
+}
+#FormularioPregunta{
+    display: none;
+}
+#FormularioProceso{
+    display: none;
+}
 
 ul{
     background-color: yellow;
