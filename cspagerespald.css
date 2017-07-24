@@ -52,8 +52,8 @@ body{
 }
 
 /*########################################################*/
-#login{
-    background-color: gray;
+##login{
+    background-color: white;
     margin: 0px 0px;
     float: right;
     height: 70px;
@@ -61,7 +61,7 @@ body{
 }
 
 #sesion{
-    background-color: lightgreen;
+    background-color: lightcyan;
     margin: 0px 0px;
     float: left;
     height: 70px;
@@ -69,33 +69,40 @@ body{
 }
 
 #li-sesion{
-    background-color: yellowgreen;
-    margin: 20px 20px;
+    background-color: white;
+    margin: 20px 10px;
     float: left;
-    height: 30px;
-    width: 30%;
+    height: 20px;
+    width: 50%;
     font-size: 20px;
 }
 
 #ul-sesion{
-    background-color: darkblue;
-    margin: 10px 10px;
-    float: left;
-    height: 30px;
-    width: 70%;
+    background-color: dimgrey;
+    margin: 45px 125px;
+    float: right;
+    height: 0px;
+    width: 0%;
         
 }
 
 #li-sesion2{
-    background-color: aliceblue;
+    background-color: grey;
     margin: 0px 0px;
     float: left;
     height: 30px;
-    width: 30%;
+    width: 100%;
     font-size: 20px;
 }
 
-
+#mas{
+    background-color: darkgray;
+    margin: 20px 5px;
+    float: right;
+    height: 25px;
+    width: 15%;
+    font-size: 20px;
+}
 
 /*ul-sesion li-sesion{
     background-color: black;
@@ -109,12 +116,13 @@ body{
 
 #logouser{
     position: sticky;
-    background-color: white;
-    margin: 0px 0px;
+/*    background-color: ;*/
+    margin: 2px 1px;
     float: left;
     height: 100%;
     width: 100%;
 }
+
 
 /*#############################################*/
 #main-menu{

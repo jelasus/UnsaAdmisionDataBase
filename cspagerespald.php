@@ -23,17 +23,28 @@
             
             
             <div id = "menu-head">
-                <div id = "login">
-                    <li id = "li-sesion">User:</li>
-                        <ul id = "ul-sesion">
-                            <li id = "li-sesion2">Cerrar sesion</li>
-                            <li id = "li-sesion2">Configuracion</li>
+                <div id = "login" class="user-heading">
+                    <h3 id = "li-sesion">
+                       Usuario
+                       <span class="help-block">
+                           <small>Adm/Op</small>
+                       </span>                       
+                    </h3>
+                    <div class="dropdown">
+                        <button id = "mas" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul id ="ul-sesion" class="dropdown-menu">
+                            <li id = "li-sesion2"><a href="#">Perfil</a></li>		
+                            <li id = "li-sesion2"><a href="#">Configuracion</a></li>
+                            <li id = "li-sesion2"><a href="#">Salir</a></li>
                         </ul>
+                    </div>
                 </div>
                 
                 <div id = "sesion">
-                    <figure id = "logouser"> 
-                            <img src="unsa_logo.jpg" alt="logo unsa" height="95%" width="95%">
+                    <figure id = "logouser" class="user-image"> 
+                            <img src="user.png" alt="user" title="user" class="img-circle" height="95%" width="95%">
                     </figure> 
                 </div>
             </div>
