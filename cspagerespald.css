@@ -187,24 +187,24 @@ body{
 }
 
 #page-personal{
-    width: 100%;
     display: none;
 }
-#page-pregunta{
-    width: 100%;
+#page-personal-registrar{
     display: none;
 }
-#page-proceso{
-    width: 100%;
-    display: none;
-}
-#buscar-texto{
-    display: none;
-}
-#recibir-texto{
+#page-personal-modificar-ver{
     display: none;
 }
 #page-personal-ver{
+    display: none;
+}
+#page-pregunta{
+    display: none;
+}
+#page-pregunta-registrar{
+    display: none;
+}
+#page-pregunta-modificar-ver{
     display: none;
 }
 #page-pregunta-ver{
@@ -213,10 +213,25 @@ body{
 #page-pregunta-modificar{
     display: none;
 }
+#page-proceso{
+    display: none;
+}
+#page-proceso-registrar{
+    display: none;
+}
+#page-proceso-modificar-ver{
+    display: none;
+}
 #page-proceso-ver{
     display: none;
 }
 #page-proceso-modificar{
+    display: none;
+}
+#buscar-texto{
+    display: none;
+}
+#recibir-texto{
     display: none;
 }
 #nav-submenu{

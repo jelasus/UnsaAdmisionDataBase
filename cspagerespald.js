@@ -21,21 +21,91 @@ function showNothing(){
 }
 ///////////////////////////////////////////////77
 function search(elem){
-    var personal = document.getElementById("personal");
-    var proceso = document.getElementById("proceso");
-    var pregunta = document.getElementById("pregunta");
+    var registrar = document.getElementById("personal");
+    var ver = document.getElementById("proceso");
+    var modificar = document.getElementById("pregunta");
     if (pregunta.checked){
-        show(pregunta,elem);    
+        show(pregunta,elem);
     }
     else if (proceso.checked){
         show(proceso,elem);
     }
     else if (personal.checked){
         show(personal,elem);
-}
+    }
 }
 function show(elem1,elem2){
-    var proceso = document.getElementById("page-proceso");
+    var pagePersonalMV = document.getElementById("page-personal-modificar-ver");
+    var pageProcesoMV = document.getElementById("page-proceso-modificar-ver");
+    var pagePreguntaMV = document.getElementById("page-pregunta-modificar-ver");
+    var pagePersonalRegistrar = document.getElementById("page-personal-registrar");
+    var pageProcesoRegistrar = document.getElementById("page-proceso-registrar");
+    var pagePreguntaRegistrar = document.getElementById("page-pregunta-registrar");
+    var PreguntaModificar = document.getElementById("page-pregunta-modificar");
+    var PreguntaVer = document.getElementById("page-pregunta-ver");
+    var ProcesoModificar = document.getElementById("page-proceso-modificar");
+    var ProcesoVer = document.getElementById("page-proceso-ver");
+    var PersonalVer = document.getElementById("page-personal-ver");
+    var pagePersonal = document.getElementById("page-personal");
+    var pagePregunta = document.getElementById("page-pregunta");
+    var pageProceso = document.getElementById("page-proceso");
+    pagePreguntaMV.style.display="none";
+    pagePersonalMV.style.display="none";
+    pageProcesoMV.style.display="none";
+    pagePreguntaRegistrar.style.display="none";
+    pageProcesoRegistrar.style.display="none";
+    pagePersonalRegistrar.style.display="none";
+    PersonalVer.style.display="none";
+    ProcesoVer.style.display="none";
+    ProcesoModificar.style.display="none";
+    PreguntaVer.style.display="none";
+    PreguntaModificar.style.display="none";
+    if (elem2 == "registrar"){
+        if (elem1.id == "personal"){
+            pagePersonal.style.display="initial";
+            pagePersonalRegistrar.style.display="initial";
+        }
+        else if (elem1.id == "pregunta") {
+            pagePregunta.style.display="initial";
+            pagePreguntaRegistrar.style.display="initial";
+        }
+        else {
+            pageProceso.style.display="initial";
+            pageProcesoRegistrar.style.display="initial";
+        }
+    }
+    else {
+        if (elem1 == "proceso"){
+            pageProceso.style.display="initial";
+            pageProcesoMV.style.display="initial";
+            if (elem2 == "modificar"){
+                ProcesoModificar.style.display = "initial";
+            }
+            else if (elem2 == "ver"){
+                ProcesoVer.style.display = "initial";
+            }
+        }
+        else if (elem1 == "personal"){
+            pagePersonal.style.display="initial";
+            pagePersonalMV.style.display="initial";
+            if (elem2 == "ver"){
+                PersonalVer.style.display = "initial";
+            }
+        }
+        else{
+            pageProceso.style.display="initial";
+            pageProcesoMV.style.display="initial";
+            if (elem2 == "modificar"){
+                ProcesoModificar.style.display = "initial";
+            }
+            else if (elem2 == "ver"){
+                ProcesoVer.style.display = "initial";
+            }
+        }
+    }
+}
+/*function show(elem1,elem2){
+    /*var proceso = document.getElementById("page-proceso");
     var pregunta = document.getElementById("page-pregunta");
     var personal = document.getElementById("page-personal");
     if (elem1.id == "proceso"){
@@ -56,13 +126,10 @@ function show(elem1,elem2){
         proceso.style.display = "none";
         personal.style.display = "initial";
     }
-
 }
 function actualizarPregunta(elem){
     var funcion1 = document.getElementById("page-pregunta-modificar");
     var funcion2 = document.getElementById("page-pregunta-ver");
-    funcion1.style.display="none";
-    funcion2.style.display="none";
     if (elem == "modificar"){
         funcion1.style.display = "initial";
     }
@@ -73,8 +140,6 @@ function actualizarPregunta(elem){
 function actualizarProceso(elem){
     var funcion1 = document.getElementById("page-proceso-modificar");
     var funcion2 = document.getElementById("page-proceso-ver");
-    funcion1.style.display="none";
-    funcion2.style.display="none";
     if (elem == "modificar"){
         funcion1.style.display = "initial";
     }
@@ -84,11 +149,10 @@ function actualizarProceso(elem){
 }
 function actualizarPersonal(elem){
     var funcion = document.getElementById("page-personal-ver");
-    funcion.style.display="none";
     if (elem == "ver"){
         funcion.style.display = "initial";
     }
-}
+}*/
 ///////////////////////////////////////////7
 function Modificar(elem){
     alert("modificando");
