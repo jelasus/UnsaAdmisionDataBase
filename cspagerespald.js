@@ -120,7 +120,203 @@ function hacer(elem){
         showNothing();
     }
 }
-///////////////////////////////
-function getDir(){
-    document.getElementById("entradaDatos").action = "";/*colocar aqui*/
+////////////////////////////////////
+/*function getDir(){
+    document.getElementById("entradaDatos").action = colocar aqui
+}*/
+function formulario(){
+
+}
+////////////////PERSONAL-FUNCIONES////////////////////
+function FormPersonalRegistrar(elem){
+
+}
+function FormPersonalDni(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalApellido(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalNombre(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalDependencia(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalCorreo(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalCategoria(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalRegimen(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalEstado(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalCui(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalCargoProceso(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalCargoUnsa(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalInfoHistorica(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPersonalA(elem){
+    document.getElementById("entradaDatos").action = ;
+}
+function FormPersonalB(elem){
+    document.getElementById("entradaDatos").action = ;
+}
+function FormPersonalC(elem){
+    document.getElementById("entradaDatos").action = ;
+}
+/////////////PREGUNTA-FUNCIONES//////////////
+function FormPreguntaRegistrar(elem){
+    document.getElementById("entradaDatos").action = ;
+}
+function FormPreguntaId(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaPreguntasElegidas(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDificultad(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaEnunciado(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDistractorA(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDistractorB(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDistractorC(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDistractorD(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaDistractorE(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
+}
+function FormPreguntaFecha(elem){
+    if (elem == "modificar"){
+        document.getElementById("entradaDatos").action = ;
+    }
+    else{
+        document.getElementById("entradaDatos").action = ;
+    }
 }
