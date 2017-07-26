@@ -8,7 +8,7 @@ function elegirPabellon(elem){
 		var newOption;
 		for (i=0;i<escuelas.length;++i){
 			newOption = document.createElement("option");
-			newOption.text=escuelas[i];
+			newOption.text=escuelas[i]; 
 			newOption.value=escuelas[i];
 			if (typeof newOption.innerText === 'undefined'){
     			newOption.textContent = escuelas[i];
