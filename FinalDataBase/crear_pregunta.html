@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Intro Internet CS</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/main-style.css" rel="stylesheet" />
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+   </head>
+<body>
+    <!--  wrapper -->
+    <div id="wrapper">
+        <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header "SIMTRA"-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo1_unsa.png" alt="" />
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- navbar-top-links QUEDA!!-->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- main dropdown -->
+                <ul class="nav navbar-top-links navbar-right">
+                <!-- main dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <i class="fa fa-envelope fa-3x"></i>
+                    </a>
+                    <!-- dropdown-messages -->
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="enviar_mensaje.html">
+
+                                <div>Enviar Mensaje</div>
+                            </a>
+                        </li>
+
+                        </li>
+                    </ul>
+                    <!-- end dropdown-messages -->
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-3x"></i>
+                    </a>
+                    <!-- dropdown user-->
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="perfilUsuario.html"><i class="fa fa-user fa-fw"></i>Perfil de usuario</a>
+                        </li>
+                        <li><a href="configuracionUsuario.html"><i class="fa fa-gear fa-fw"></i>Configuracion</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar sesion</a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-user -->
+                </li>
+                <!-- end main dropdown -->
+            </ul>
+            <!-- end navbar-top-links -->
+
+        </nav>
+        <!-- end navbar top -->
+
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse">
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu">
+                    <br>
+                    <li>
+                        <!-- user image section-->
+                        <div class="user-section">
+                            <div class="user-section-inner">
+                                <img src="assets/img/user.png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <div><strong>User</strong></div>
+                                <div class="user-text-online">
+                                    <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
+                                </div>
+                            </div>
+                        </div>
+                        <!--end user image section-->
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit fa-fw "></i>PROCESO<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li>
+                                <a href="crear_proceso.html">Nuevo</a>
+                            </li>
+
+                            <li>
+                                <a href="editar_proceso.html">Editar</a>
+                            </li>
+
+
+
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit fa-fw "></i>PREGUNTAS<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li>
+                                <a href="crear_pregunta.html">Nuevo</a>
+                            </li>
+
+                            <li>
+                                <a href="editar_pregunta.html">Editar</a>
+                            </li>
+
+
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit fa-fw "></i>COLABORADORES<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li>
+                                <a href="crear_colaborador.html">Nuevo</a>
+                            </li>
+
+                            <li>
+                                <a href="editar_colaborador.html">Editar</a>
+                            </li>
+
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-files-o fa-fw "></i>BUSCAR <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li>
+                                <a href="verProcesos.html">Procesos</a>
+                            </li>
+
+                            <li>
+                                <a href="verPreguntas.html">Preguntas</a>
+                            </li>
+
+                            <li>
+                                <a href="verColaboradores.html">Colaboradores</a>
+                            </li>
+
+                        </ul>
+                        <!-- second-level-items -->
+                    </li>
+
+                </ul>
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        <!--  page-wrapper -->
+        <div id="page-wrapper">
+          <br>
+          <div class="row">
+               <!-- page header -->
+              <div class="col-lg-12">
+                  <h1 class="page-header">Preguntas</h1>
+              </div>
+              <!--end page header -->
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <!-- Form Elements -->
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          Crea nueva pregunta:
+                      </div>
+                      <div class="panel-body">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                  <form role="form">
+                                      <div class="form-group">
+                                          <label>Curso</label>
+                                          <select class="form-control">
+                                              <option>Matematica</option>
+                                              <option>Lenguaje</option>
+                                              <option>Historia</option>
+                                              <option>Literatura</option>
+                                              <option>Geografia</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Tema</label>
+                                          <select class="form-control">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Elegida</label>
+                                          <select class="form-control">
+                                              <option>Si</option>
+                                              <option>No</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Formulador de pregunta (DNI)</label>
+                                          <input class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Elegida</label>
+                                          <select class="form-control">
+                                              <option>Baja</option>
+                                              <option>Media</option>
+                                              <option>Alta</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Inicio de pregunta</label>
+                                          <input class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Enunciado</label>
+                                          <input type="file">
+                                      </div>
+                                      <div class="form-group">
+                                          <img src="assets/img/logo1_unsa.png" alt="" />
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Resolucion</label>
+                                          <input type="file">
+                                      </div>
+                                      <div class="form-group">
+                                          <img src="assets/img/logo1_unsa.png" alt="" />
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Respuesta Correcta</label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>A
+                                          </label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">B
+                                          </label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">C
+                                          </label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">D
+                                          </label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">E
+                                          </label>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label>A:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>B:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>C:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>D:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>E:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Fecha</label>
+                                          <input class="form-control">
+                                          <p class="help-block">Colocar la fecha con el siguiente formato: 25/12/2016.</p>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Crear</button>
+                                      <button type="reset" class="btn btn-success">Limpiar</button>
+
+                                  </form>
+                              </div>
+
+                             <!-- <div class="col-lg-6">
+                                  <h1>Disabled Form States</h1>
+                                  <form role="form">
+                                      <fieldset disabled="disabled">
+                                          <div class="form-group">
+                                              <label for="disabledSelect">Disabled input</label>
+                                              <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="disabledSelect">Disabled select menu</label>
+                                              <select id="disabledSelect" class="form-control">
+                                                  <option>Disabled select</option>
+                                              </select>
+                                          </div>
+                                          <div class="checkbox">
+                                              <label>
+                                                  <input type="checkbox">Disabled Checkbox
+                                              </label>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Disabled Button</button>
+                                      </fieldset>
+                                  </form>
+                                  <h1>Form Validation States</h1>
+                                  <form role="form">
+                                      <div class="form-group has-success">
+                                          <label class="control-label" for="inputSuccess">Input with success</label>
+                                          <input type="text" class="form-control" id="inputSuccess">
+                                      </div>
+                                      <div class="form-group has-warning">
+                                          <label class="control-label" for="inputWarning">Input with warning</label>
+                                          <input type="text" class="form-control" id="inputWarning">
+                                      </div>
+                                      <div class="form-group has-error">
+                                          <label class="control-label" for="inputError">Input with error</label>
+                                          <input type="text" class="form-control" id="inputError">
+                                      </div>
+                                  </form>
+                                  <h1>Input Groups</h1>
+                                  <form role="form">
+                                      <div class="form-group input-group">
+                                          <span class="input-group-addon">@</span>
+                                          <input type="text" class="form-control" placeholder="Username">
+                                      </div>
+                                      <div class="form-group input-group">
+                                          <input type="text" class="form-control">
+                                          <span class="input-group-addon">.00</span>
+                                      </div>
+                                      <div class="form-group input-group">
+                                          <span class="input-group-addon"><i class="fa fa-eur"></i>
+                                          </span>
+                                          <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                                      </div>
+                                      <div class="form-group input-group">
+                                          <span class="input-group-addon">$</span>
+                                          <input type="text" class="form-control">
+                                          <span class="input-group-addon">.00</span>
+                                      </div>
+                                      <div class="form-group input-group">
+                                          <input type="text" class="form-control">
+                                          <span class="input-group-btn">
+                                              <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                              </button>
+                                          </span>
+                                      </div>
+                                  </form>
+                              </div>-->
+
+                          </div>
+                      </div>
+                  </div>
+                   <!-- End Form Elements -->
+              </div>
+          </div>
+
+
+
+
+
+        </div>
+        <!-- end page-wrapper -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/plugins/morris/morris.js"></script>
+    <script src="assets/scripts/dashboard-demo.js"></script>
+
+</body>
+
+</html>
