@@ -4,7 +4,7 @@ function elegirPabellon(elem){
 	var area = document.getElementById(elem).value;
 	var i;
 	if (area=="Ingenierias"){
-		var escuelas = ["Ciencia de la Computacion", "Matematica"];
+		var escuelas = ["Ciencia de la Computacion", "Ingenieria de Sistemas", "Ingenieria Electronica", "Ingenieria Mecanica", "Ingenieria Industrial", "Ingenieria Ambiental", "Ingenieria de Industrias Alimentarias", "Ingenieria Quimica", "Ingenieria de Materiales", "Matematica"];
 		var newOption;
 		for (i=0;i<escuelas.length;++i){
 			newOption = document.createElement("option");
